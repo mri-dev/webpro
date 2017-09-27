@@ -5,19 +5,29 @@ body, html {
 }
 
 /* line 7, sass/style.scss */
-.design-viewer .fusion-column-wrapper {
+.design-viewer > .fusion-column-wrapper {
   width: 1100px;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 25px 0;
-  font-size: 1.2em !important;
+  padding: 40px 0;
+}
+/* line 13, sass/style.scss */
+.design-viewer > .fusion-column-wrapper .fusion-layout-column {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+  padding: 0 20px;
+}
+/* line 20, sass/style.scss */
+.design-viewer .fusion-column-wrapper {
+  font-size: 1.1em !important;
   color: #fefefe;
 }
-/* line 16, sass/style.scss */
+/* line 24, sass/style.scss */
 .design-viewer .fusion-column-wrapper h1, .design-viewer .fusion-column-wrapper h2 {
   color: #fefefe;
 }
-/* line 20, sass/style.scss */
+/* line 28, sass/style.scss */
 .design-viewer .fusion-column-wrapper h2 {
   font-size: 1.9em !important;
   margin: 15px 0 !important;

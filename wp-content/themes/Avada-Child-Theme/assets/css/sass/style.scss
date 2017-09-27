@@ -4,13 +4,21 @@ body,html {
 }
 
 .design-viewer{
-  .fusion-column-wrapper{
+  & > .fusion-column-wrapper{
     width: 1100px;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 25px 0;
-    font-size: 1.2em !important;
+    padding: 40px 0;
 
+    .fusion-layout-column{
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+      padding: 0 20px;
+    }
+  }
+  .fusion-column-wrapper{
+    font-size: 1.1em !important;
     color: #fefefe;
 
     h1, h2 {
