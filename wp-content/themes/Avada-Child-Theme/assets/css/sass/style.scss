@@ -1,6 +1,214 @@
+@import 'settings';
+
 body,html {
   height: 100%;
   position: relative;
+}
+
+.page-width{
+  max-width: $page-width;
+  width: $page-width;
+  margin: 0 auto;
+}
+
+.flxtbl{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+
+  &.ic3 > div{
+    flex-basis: calc(100%/3);
+  }
+}
+
+.homemaindesign-holder{
+  .designholder{
+    .designbox{
+      min-height: 400px;
+      position: relative;
+      overflow: hidden;
+
+      .design-base{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      &.tervez{
+        background: darken($color-blue, 5%);
+
+        .design-base{
+          width: 80%;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+        }
+      }
+      &.kivitelez{
+        background: $color-brown;
+        .design-base{
+          width: 100%;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+        }
+      }
+      &.hosting{
+        background: lighten($color-blue, 5%);
+        .design-base{
+          width: 80%;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+        }
+      }
+
+      .cloud-des{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        &.cloud-white{
+          background-image: url('../../images/cloude-white.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        &.cloud-dark{
+          background-image: url('../../images/cloude-colored.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        &.cloud-big {
+          width: 200px;
+          height: 100px;
+        }
+        &.cloud-sm {
+          width: 80px;
+          height: 40px;
+        }
+        &.cld1{
+          z-index: 105;
+        }
+        &.cld2{
+          z-index: 104;
+        }
+        &.cld3{
+          z-index: 103;
+        }
+        &.cld4{
+          z-index: 102;
+        }
+        &.cld5{
+          z-index: 101;
+        }
+
+        &.animate{
+          &.animate-left{
+            animation-name: cloudewalkleft;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+          }
+          &.animate-right{
+            animation-name: cloudewalkright;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+          }
+
+          &.animate-slow{            
+            animation-duration: 25s;
+          }
+        }
+      }
+
+      &.hosting{
+        .cloud-des{
+          bottom: -28px;
+          &.cld1{
+            left: 10px;
+          }
+          &.cld2{
+            left: 55px;
+            bottom: -10px;
+          }
+          &.cld3{
+            left: auto;
+            right: 50px;
+            bottom: -10px;
+          }
+          &.cld4{
+            left: auto;
+            right: 10px;
+            bottom: -5px;
+          }
+        }
+      }
+      &.kivitelez{
+        .cloud-des{
+          bottom: -28px;
+          &.cld1{
+            left: -103px;
+            bottom: -24px;
+          }
+          &.cld2{
+            left: -47px;
+            bottom: -11px;
+          }
+          &.cld3{
+            bottom: -53px;
+            left: 104px;
+          }
+          &.cld4{
+            left: auto;
+            right: -55px;
+            bottom: -8px;
+          }
+          &.cld5{
+            left: auto;
+            right: -100px;
+            bottom: 42px;
+          }
+        }
+      }
+    }
+  }
+  .bottom-bar{
+    background: darken($color-blue, 10%);
+
+    a {
+      display: block;
+      padding: 20px 0;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.15vw;
+    }
+
+    .tervez a{
+      &:hover{
+        background: darken($color-blue, 15%);
+      }
+    }
+
+    .kivitelez a{
+      background: darken($color-brown, 10%);
+      &:hover{
+        background: darken($color-brown, 15%);
+      }
+    }
+
+    .hosting a{
+      &:hover{
+        background: darken($color-blue, 5%);
+      }
+    }
+  }
 }
 
 .design-viewer{
@@ -30,4 +238,15 @@ body,html {
       margin: 15px 0 !important;
     }
   }
+}
+
+@keyframes cloudewalkleft {
+  0% { margin-right: 0px;}
+  50% { margin-right: 100px; }
+  100% { margin-right: 0px; }
+}
+@keyframes cloudewalkright {
+    0% { margin-left: 0px;}
+    50% { margin-left: 100px; }
+    100% { margin-left: 0px; }
 }

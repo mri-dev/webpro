@@ -1,34 +1,289 @@
-/* line 1, sass/style.scss */
+/* line 3, sass/style.scss */
 body, html {
   height: 100%;
   position: relative;
 }
 
-/* line 7, sass/style.scss */
+/* line 8, sass/style.scss */
+.page-width {
+  max-width: 1100px;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* line 14, sass/style.scss */
+.flxtbl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 20, sass/style.scss */
+.flxtbl.ic3 > div {
+  flex-basis: calc(100%/3);
+}
+
+/* line 27, sass/style.scss */
+.homemaindesign-holder .designholder .designbox {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 32, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .design-base {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+/* line 37, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .design-base img {
+  max-width: 100%;
+}
+/* line 42, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.tervez {
+  background: #009eb8;
+}
+/* line 45, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.tervez .design-base {
+  width: 80%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 53, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.kivitelez {
+  background: #d2bba0;
+}
+/* line 55, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.kivitelez .design-base {
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 62, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.hosting {
+  background: #00caeb;
+}
+/* line 64, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.hosting .design-base {
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 73, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+/* line 78, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.cloud-white {
+  background-image: url("../../images/cloude-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 83, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.cloud-dark {
+  background-image: url("../../images/cloude-colored.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 88, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.cloud-big {
+  width: 200px;
+  height: 100px;
+}
+/* line 92, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.cloud-sm {
+  width: 80px;
+  height: 40px;
+}
+/* line 96, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.cld1 {
+  z-index: 105;
+}
+/* line 99, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.cld2 {
+  z-index: 104;
+}
+/* line 102, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.cld3 {
+  z-index: 103;
+}
+/* line 105, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.cld4 {
+  z-index: 102;
+}
+/* line 108, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.cld5 {
+  z-index: 101;
+}
+/* line 113, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.animate.animate-left {
+  animation-name: cloudewalkleft;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+/* line 118, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.animate.animate-right {
+  animation-name: cloudewalkright;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+/* line 124, sass/style.scss */
+.homemaindesign-holder .designholder .designbox .cloud-des.animate.animate-slow {
+  animation-duration: 25s;
+}
+/* line 131, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.hosting .cloud-des {
+  bottom: -28px;
+}
+/* line 133, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld1 {
+  left: 10px;
+}
+/* line 136, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld2 {
+  left: 55px;
+  bottom: -10px;
+}
+/* line 140, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld3 {
+  left: auto;
+  right: 50px;
+  bottom: -10px;
+}
+/* line 145, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld4 {
+  left: auto;
+  right: 10px;
+  bottom: -5px;
+}
+/* line 153, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.kivitelez .cloud-des {
+  bottom: -28px;
+}
+/* line 155, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld1 {
+  left: -103px;
+  bottom: -24px;
+}
+/* line 159, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld2 {
+  left: -47px;
+  bottom: -11px;
+}
+/* line 163, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld3 {
+  bottom: -53px;
+  left: 104px;
+}
+/* line 167, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld4 {
+  left: auto;
+  right: -55px;
+  bottom: -8px;
+}
+/* line 172, sass/style.scss */
+.homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld5 {
+  left: auto;
+  right: -100px;
+  bottom: 42px;
+}
+/* line 181, sass/style.scss */
+.homemaindesign-holder .bottom-bar {
+  background: #00889f;
+}
+/* line 184, sass/style.scss */
+.homemaindesign-holder .bottom-bar a {
+  display: block;
+  padding: 20px 0;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.15vw;
+}
+/* line 194, sass/style.scss */
+.homemaindesign-holder .bottom-bar .tervez a:hover {
+  background: #007285;
+}
+/* line 199, sass/style.scss */
+.homemaindesign-holder .bottom-bar .kivitelez a {
+  background: #c2a27d;
+}
+/* line 201, sass/style.scss */
+.homemaindesign-holder .bottom-bar .kivitelez a:hover {
+  background: #b9966c;
+}
+/* line 207, sass/style.scss */
+.homemaindesign-holder .bottom-bar .hosting a:hover {
+  background: #009eb8;
+}
+
+/* line 215, sass/style.scss */
 .design-viewer > .fusion-column-wrapper {
   width: 1100px;
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 0;
 }
-/* line 13, sass/style.scss */
+/* line 221, sass/style.scss */
 .design-viewer > .fusion-column-wrapper .fusion-layout-column {
   display: table-cell;
   vertical-align: middle;
   float: none;
   padding: 0 20px;
 }
-/* line 20, sass/style.scss */
+/* line 228, sass/style.scss */
 .design-viewer .fusion-column-wrapper {
   font-size: 1.1em !important;
   color: #fefefe;
 }
-/* line 24, sass/style.scss */
+/* line 232, sass/style.scss */
 .design-viewer .fusion-column-wrapper h1, .design-viewer .fusion-column-wrapper h2 {
   color: #fefefe;
 }
-/* line 28, sass/style.scss */
+/* line 236, sass/style.scss */
 .design-viewer .fusion-column-wrapper h2 {
   font-size: 1.9em !important;
   margin: 15px 0 !important;
+}
+
+@keyframes cloudewalkleft {
+  /* line 244, sass/style.scss */
+  0% {
+    margin-right: 0px;
+  }
+
+  /* line 245, sass/style.scss */
+  50% {
+    margin-right: 100px;
+  }
+
+  /* line 246, sass/style.scss */
+  100% {
+    margin-right: 0px;
+  }
+}
+
+@keyframes cloudewalkright {
+  /* line 249, sass/style.scss */
+  0% {
+    margin-left: 0px;
+  }
+
+  /* line 250, sass/style.scss */
+  50% {
+    margin-left: 100px;
+  }
+
+  /* line 251, sass/style.scss */
+  100% {
+    margin-left: 0px;
+  }
 }
