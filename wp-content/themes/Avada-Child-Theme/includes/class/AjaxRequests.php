@@ -54,15 +54,40 @@ class AjaxRequests
       $this->returnJSON($return);
     }
 
+    // captcha
+    $captcha_code = $_POST['g-recaptcha-response'];
+    $recapdata = array(
+        'secret' => CAPTCHA_SECRET_KEY,
+        'response' => $captcha_code
+    );
+    $return['recaptcha']['secret'] = CAPTCHA_SECRET_KEY;
+    $return['recaptcha']['response'] = $captcha_code;
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($recapdata));
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $recap_result = json_decode(curl_exec($ch), true);
+    curl_close($ch);
+    $return['recaptcha']['result'] = $recap_result;
+
+    if(isset($recap_result['success']) && $recap_result['success'] === false) {
+      $return['error']  = 1;
+      $return['msg']    =  __('Kérjük, hogy azonosítsa magát. Ha Ön nem spam robot, jelölje be a fenti jelölő négyzetben, hogy nem robot.',  'Avada');
+      $this->returnJSON($return);
+    }
+
+
     $to       = get_option('admin_email');
-    $subject  = sprintf(__('Ajánlatkérés érkezett: %s (%s | %s)'), $contact['vezeteknev'].' '.$contact['keresztnev'], $contact['email'], $contact['telefon']);
+    $subject  = sprintf(__('Üzenet érkezett: %s (%s: %s)'), $name, $temakor, $targy);
 
     ob_start();
   	  include(locate_template('templates/mails/contactform.php'));
       $message = ob_get_contents();
 		ob_end_clean();
 
-    //add_filter( 'wp_mail_from', array($this, 'getMailSender') );
+    add_filter( 'wp_mail_from', array($this, 'getMailSender') );
     add_filter( 'wp_mail_from_name', array($this, 'getMailSenderName') );
     add_filter( 'wp_mail_content_type', array($this, 'getMailFormat') );
 
@@ -71,6 +96,15 @@ class AjaxRequests
 
     /* */
     $alert = wp_mail( $to, $subject, $message, $headers );
+
+    $headers    = array();
+    $headers[]  = 'Reply-To: '.get_option('blogname').' <no-reply@'.TARGETDOMAIN.'>';
+    $alerttext = true;
+    ob_start();
+  	  include(locate_template('templates/mails/contactform-receiveuser.php'));
+      $message = ob_get_contents();
+		ob_end_clean();
+    $ualert = wp_mail( $email, 'Értesítő: üzenetét megkaptuk.', $message, $headers );
 
     if(!$alert) {
       $return['error']  = 1;

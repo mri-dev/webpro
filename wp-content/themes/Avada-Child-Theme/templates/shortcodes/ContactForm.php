@@ -50,7 +50,7 @@
       <div class="uzenet">
         <label for="uzenet">Üzenete*</label>
         <div class="form-input-holder">
-          <textarea name="uzenet" class="form-control"></textarea>
+          <textarea name="uzenet" id="uzenet" class="form-control"></textarea>
         </div>
       </div>
       <div class="recaptcha">

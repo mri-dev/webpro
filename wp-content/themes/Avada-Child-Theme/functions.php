@@ -13,6 +13,7 @@ define('TD', 'webpro');
 
 // reCaptcha
 define('CAPTCHA_SITE_KEY', '6LdlhDIUAAAAANUHFPBFG7GYNIwRs4h_ZivT3Amp');
+define('CAPTCHA_SECRET_KEY', '6LdlhDIUAAAAAJd_Ijo8ti8gzPLmK8cKRLl79-cS');
 
 // Includes
 require_once "includes/include.php";
@@ -21,7 +22,7 @@ require_once "includes/include.php";
 
 function theme_enqueue_styles() {
     wp_enqueue_style( 'avada-parent-stylesheet', get_template_directory_uri() . '/style.css?' );
-    wp_enqueue_script('captcha', 'https://www.google.com/recaptcha/api.js');
+    wp_enqueue_script('captcha', 'https://www.google.com/recaptcha/api.js?lang=hu');
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
