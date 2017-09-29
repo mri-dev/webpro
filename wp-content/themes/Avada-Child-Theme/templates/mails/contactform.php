@@ -1,0 +1,1 @@
+Értesítő üzenet

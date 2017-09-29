@@ -23,6 +23,7 @@ body,html {
 }
 
 .homemaindesign-holder{
+  border-bottom: 15px solid #3e4748;
   .designholder{
     .designbox{
       min-height: 400px;
@@ -121,7 +122,7 @@ body,html {
             animation-iteration-count: infinite;
           }
 
-          &.animate-slow{            
+          &.animate-slow{
             animation-duration: 25s;
           }
         }
@@ -187,7 +188,7 @@ body,html {
       color: white;
       text-transform: uppercase;
       text-align: center;
-      font-size: 1.15vw;
+      font-size: 1.15em;
     }
 
     .tervez a{
@@ -238,6 +239,144 @@ body,html {
       margin: 15px 0 !important;
     }
   }
+}
+
+.contact-form-holder{
+  position: relative;
+
+  .des-v{
+    position: absolute;
+    pointer-events: none;
+    z-index: 100;
+
+    img {
+      width: 100%;
+    }
+
+    &.coffee{
+      width: 250px;
+      left: -100px;
+      top: -150px;
+    }
+    &.levcer{
+      width: 400px;
+      left: -70px;
+      bottom: -100px;
+    }
+    &.klavi{
+      width: 550px;
+      right: -70px;
+      bottom: 50px;
+    }
+  }
+
+  .group-holder{
+    position: relative;
+    z-index: 200;
+    width: $page-width;
+    max-width: $page-width;
+    margin: 0 auto;
+    padding: 0 10%;
+
+    .heading{
+      text-align: center;
+      h3 {
+        font-weight: bold;
+        margin: 45px 0;
+        color: #656565;
+      }
+    }
+  }
+
+  label {
+    font-weight: bold;
+    color: black;
+    padding: 0 0 10px 0;
+    display: block;
+  }
+
+  input, textarea, select {
+    border: none;
+    color: $color-blue;
+    padding: 10px;
+    font-size: 1.3em;
+    height: auto;
+    max-height: initial;
+    line-height: inherit;
+    border: 2px solid #ececec;
+    border-radius: 4px;
+  }
+  select, textarea {
+    width: 100%;
+  }
+  textarea{
+    width: 100%;
+    max-height: 100%;
+    min-height: 400px;
+  }
+  .missing {
+    border: 2px solid #f7a197;
+  }
+  .flxtbl {
+    & > div {
+      padding: 10px;
+    }
+    & > .name,
+    & > .email,
+    & > .phone {
+      flex-basis: calc(100%/3);
+    }
+    & > .temakor{
+      flex-basis: calc(100%/3);
+    }
+    & > .tema{
+      flex-basis: 66.666666%;
+    }
+    & > .uzenet{
+      flex-basis: 100%;
+    }
+    & > .recaptcha{
+      flex-basis: 100%;
+    }
+    & > .btns{
+      flex-basis: 100%;
+    }
+
+    button {
+      background: $color-blue;
+      color: white;
+      text-transform: uppercase;
+      padding: 12px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover{
+        background: darken($color-blue, 5%);
+      }
+
+      &.in-progress{
+        background: $color-laz;
+      }
+      &.sended{
+        background: $color-green;
+      }
+    }
+  }
+}
+
+.alert-danger {
+    color: #ffffff;
+    background-color: #ef6454;
+    border-color: #d75647;
+}
+
+.contact-design-top{
+  height: 430px;
+  background-image: url('../../images/contact-temp-top.svg');
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
 }
 
 @keyframes cloudewalkleft {

@@ -11,6 +11,9 @@ define('FB_APP_ID', '');
 define('DEFAULT_LANGUAGE', 'hu_HU');
 define('TD', 'webpro');
 
+// reCaptcha
+define('CAPTCHA_SITE_KEY', '6LdlhDIUAAAAANUHFPBFG7GYNIwRs4h_ZivT3Amp');
+
 // Includes
 require_once "includes/include.php";
 
@@ -18,6 +21,7 @@ require_once "includes/include.php";
 
 function theme_enqueue_styles() {
     wp_enqueue_style( 'avada-parent-stylesheet', get_template_directory_uri() . '/style.css?' );
+    wp_enqueue_script('captcha', 'https://www.google.com/recaptcha/api.js');
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
@@ -123,7 +127,8 @@ add_filter('query_vars', 'rd_query_vars');
 */
 function ajax_requests()
 {
-  //$ajax = new AjaxRequests();
+  $ajax = new AjaxRequests();
+  $ajax->contact_form();
 }
 add_action( 'init', 'ajax_requests' );
 

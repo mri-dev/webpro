@@ -23,27 +23,31 @@ body, html {
   flex-basis: calc(100%/3);
 }
 
-/* line 27, sass/style.scss */
+/* line 25, sass/style.scss */
+.homemaindesign-holder {
+  border-bottom: 15px solid #3e4748;
+}
+/* line 28, sass/style.scss */
 .homemaindesign-holder .designholder .designbox {
   min-height: 400px;
   position: relative;
   overflow: hidden;
 }
-/* line 32, sass/style.scss */
+/* line 33, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .design-base {
   position: absolute;
   text-align: center;
   width: 100%;
 }
-/* line 37, sass/style.scss */
+/* line 38, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .design-base img {
   max-width: 100%;
 }
-/* line 42, sass/style.scss */
+/* line 43, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.tervez {
   background: #009eb8;
 }
-/* line 45, sass/style.scss */
+/* line 46, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.tervez .design-base {
   width: 80%;
   bottom: 0;
@@ -51,22 +55,22 @@ body, html {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 53, sass/style.scss */
+/* line 54, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez {
   background: #d2bba0;
 }
-/* line 55, sass/style.scss */
+/* line 56, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .design-base {
   width: 100%;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 62, sass/style.scss */
+/* line 63, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting {
   background: #00caeb;
 }
-/* line 64, sass/style.scss */
+/* line 65, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .design-base {
   width: 80%;
   top: 50%;
@@ -74,215 +78,367 @@ body, html {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 73, sass/style.scss */
+/* line 74, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 100;
 }
-/* line 78, sass/style.scss */
+/* line 79, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cloud-white {
   background-image: url("../../images/cloude-white.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 83, sass/style.scss */
+/* line 84, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cloud-dark {
   background-image: url("../../images/cloude-colored.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 88, sass/style.scss */
+/* line 89, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cloud-big {
   width: 200px;
   height: 100px;
 }
-/* line 92, sass/style.scss */
+/* line 93, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cloud-sm {
   width: 80px;
   height: 40px;
 }
-/* line 96, sass/style.scss */
+/* line 97, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cld1 {
   z-index: 105;
 }
-/* line 99, sass/style.scss */
+/* line 100, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cld2 {
   z-index: 104;
 }
-/* line 102, sass/style.scss */
+/* line 103, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cld3 {
   z-index: 103;
 }
-/* line 105, sass/style.scss */
+/* line 106, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cld4 {
   z-index: 102;
 }
-/* line 108, sass/style.scss */
+/* line 109, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cld5 {
   z-index: 101;
 }
-/* line 113, sass/style.scss */
+/* line 114, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.animate.animate-left {
   animation-name: cloudewalkleft;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
-/* line 118, sass/style.scss */
+/* line 119, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.animate.animate-right {
   animation-name: cloudewalkright;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
-/* line 124, sass/style.scss */
+/* line 125, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.animate.animate-slow {
   animation-duration: 25s;
 }
-/* line 131, sass/style.scss */
+/* line 132, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .cloud-des {
   bottom: -28px;
 }
-/* line 133, sass/style.scss */
+/* line 134, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld1 {
   left: 10px;
 }
-/* line 136, sass/style.scss */
+/* line 137, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld2 {
   left: 55px;
   bottom: -10px;
 }
-/* line 140, sass/style.scss */
+/* line 141, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld3 {
   left: auto;
   right: 50px;
   bottom: -10px;
 }
-/* line 145, sass/style.scss */
+/* line 146, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld4 {
   left: auto;
   right: 10px;
   bottom: -5px;
 }
-/* line 153, sass/style.scss */
+/* line 154, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des {
   bottom: -28px;
 }
-/* line 155, sass/style.scss */
+/* line 156, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld1 {
   left: -103px;
   bottom: -24px;
 }
-/* line 159, sass/style.scss */
+/* line 160, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld2 {
   left: -47px;
   bottom: -11px;
 }
-/* line 163, sass/style.scss */
+/* line 164, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld3 {
   bottom: -53px;
   left: 104px;
 }
-/* line 167, sass/style.scss */
+/* line 168, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld4 {
   left: auto;
   right: -55px;
   bottom: -8px;
 }
-/* line 172, sass/style.scss */
+/* line 173, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld5 {
   left: auto;
   right: -100px;
   bottom: 42px;
 }
-/* line 181, sass/style.scss */
+/* line 182, sass/style.scss */
 .homemaindesign-holder .bottom-bar {
   background: #00889f;
 }
-/* line 184, sass/style.scss */
+/* line 185, sass/style.scss */
 .homemaindesign-holder .bottom-bar a {
   display: block;
   padding: 20px 0;
   color: white;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.15vw;
+  font-size: 1.15em;
 }
-/* line 194, sass/style.scss */
+/* line 195, sass/style.scss */
 .homemaindesign-holder .bottom-bar .tervez a:hover {
   background: #007285;
 }
-/* line 199, sass/style.scss */
+/* line 200, sass/style.scss */
 .homemaindesign-holder .bottom-bar .kivitelez a {
   background: #c2a27d;
 }
-/* line 201, sass/style.scss */
+/* line 202, sass/style.scss */
 .homemaindesign-holder .bottom-bar .kivitelez a:hover {
   background: #b9966c;
 }
-/* line 207, sass/style.scss */
+/* line 208, sass/style.scss */
 .homemaindesign-holder .bottom-bar .hosting a:hover {
   background: #009eb8;
 }
 
-/* line 215, sass/style.scss */
+/* line 216, sass/style.scss */
 .design-viewer > .fusion-column-wrapper {
   width: 1100px;
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 0;
 }
-/* line 221, sass/style.scss */
+/* line 222, sass/style.scss */
 .design-viewer > .fusion-column-wrapper .fusion-layout-column {
   display: table-cell;
   vertical-align: middle;
   float: none;
   padding: 0 20px;
 }
-/* line 228, sass/style.scss */
+/* line 229, sass/style.scss */
 .design-viewer .fusion-column-wrapper {
   font-size: 1.1em !important;
   color: #fefefe;
 }
-/* line 232, sass/style.scss */
+/* line 233, sass/style.scss */
 .design-viewer .fusion-column-wrapper h1, .design-viewer .fusion-column-wrapper h2 {
   color: #fefefe;
 }
-/* line 236, sass/style.scss */
+/* line 237, sass/style.scss */
 .design-viewer .fusion-column-wrapper h2 {
   font-size: 1.9em !important;
   margin: 15px 0 !important;
 }
 
+/* line 244, sass/style.scss */
+.contact-form-holder {
+  position: relative;
+}
+/* line 247, sass/style.scss */
+.contact-form-holder .des-v {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+}
+/* line 252, sass/style.scss */
+.contact-form-holder .des-v img {
+  width: 100%;
+}
+/* line 256, sass/style.scss */
+.contact-form-holder .des-v.coffee {
+  width: 250px;
+  left: -100px;
+  top: -150px;
+}
+/* line 261, sass/style.scss */
+.contact-form-holder .des-v.levcer {
+  width: 400px;
+  left: -70px;
+  bottom: -100px;
+}
+/* line 266, sass/style.scss */
+.contact-form-holder .des-v.klavi {
+  width: 550px;
+  right: -70px;
+  bottom: 50px;
+}
+/* line 273, sass/style.scss */
+.contact-form-holder .group-holder {
+  position: relative;
+  z-index: 200;
+  width: 1100px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+/* line 281, sass/style.scss */
+.contact-form-holder .group-holder .heading {
+  text-align: center;
+}
+/* line 283, sass/style.scss */
+.contact-form-holder .group-holder .heading h3 {
+  font-weight: bold;
+  margin: 45px 0;
+  color: #656565;
+}
+/* line 291, sass/style.scss */
+.contact-form-holder label {
+  font-weight: bold;
+  color: black;
+  padding: 0 0 10px 0;
+  display: block;
+}
+/* line 298, sass/style.scss */
+.contact-form-holder input, .contact-form-holder textarea, .contact-form-holder select {
+  border: none;
+  color: #00b4d2;
+  padding: 10px;
+  font-size: 1.3em;
+  height: auto;
+  max-height: initial;
+  line-height: inherit;
+  border: 2px solid #ececec;
+  border-radius: 4px;
+}
+/* line 309, sass/style.scss */
+.contact-form-holder select, .contact-form-holder textarea {
+  width: 100%;
+}
+/* line 312, sass/style.scss */
+.contact-form-holder textarea {
+  width: 100%;
+  max-height: 100%;
+  min-height: 400px;
+}
+/* line 317, sass/style.scss */
+.contact-form-holder .missing {
+  border: 2px solid #f7a197;
+}
+/* line 321, sass/style.scss */
+.contact-form-holder .flxtbl > div {
+  padding: 10px;
+}
+/* line 326, sass/style.scss */
+.contact-form-holder .flxtbl > .name, .contact-form-holder .flxtbl > .email, .contact-form-holder .flxtbl > .phone {
+  flex-basis: calc(100%/3);
+}
+/* line 329, sass/style.scss */
+.contact-form-holder .flxtbl > .temakor {
+  flex-basis: calc(100%/3);
+}
+/* line 332, sass/style.scss */
+.contact-form-holder .flxtbl > .tema {
+  flex-basis: 66.666666%;
+}
+/* line 335, sass/style.scss */
+.contact-form-holder .flxtbl > .uzenet {
+  flex-basis: 100%;
+}
+/* line 338, sass/style.scss */
+.contact-form-holder .flxtbl > .recaptcha {
+  flex-basis: 100%;
+}
+/* line 341, sass/style.scss */
+.contact-form-holder .flxtbl > .btns {
+  flex-basis: 100%;
+}
+/* line 345, sass/style.scss */
+.contact-form-holder .flxtbl button {
+  background: #00b4d2;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* line 354, sass/style.scss */
+.contact-form-holder .flxtbl button:hover {
+  background: #009eb8;
+}
+/* line 358, sass/style.scss */
+.contact-form-holder .flxtbl button.in-progress {
+  background: #f37769;
+}
+/* line 361, sass/style.scss */
+.contact-form-holder .flxtbl button.sended {
+  background: #51b683;
+}
+
+/* line 368, sass/style.scss */
+.alert-danger {
+  color: #ffffff;
+  background-color: #ef6454;
+  border-color: #d75647;
+}
+
+/* line 374, sass/style.scss */
+.contact-design-top {
+  height: 430px;
+  background-image: url("../../images/contact-temp-top.svg");
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
 @keyframes cloudewalkleft {
-  /* line 244, sass/style.scss */
+  /* line 383, sass/style.scss */
   0% {
     margin-right: 0px;
   }
 
-  /* line 245, sass/style.scss */
+  /* line 384, sass/style.scss */
   50% {
     margin-right: 100px;
   }
 
-  /* line 246, sass/style.scss */
+  /* line 385, sass/style.scss */
   100% {
     margin-right: 0px;
   }
 }
 
 @keyframes cloudewalkright {
-  /* line 249, sass/style.scss */
+  /* line 388, sass/style.scss */
   0% {
     margin-left: 0px;
   }
 
-  /* line 250, sass/style.scss */
+  /* line 389, sass/style.scss */
   50% {
     margin-left: 100px;
   }
 
-  /* line 251, sass/style.scss */
+  /* line 390, sass/style.scss */
   100% {
     margin-left: 0px;
   }
