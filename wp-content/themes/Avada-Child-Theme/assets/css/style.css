@@ -249,48 +249,56 @@ body, html {
   color: #fefefe;
 }
 /* line 233, sass/style.scss */
-.design-viewer .fusion-column-wrapper h1, .design-viewer .fusion-column-wrapper h2 {
+.design-viewer .fusion-column-wrapper h1, .design-viewer .fusion-column-wrapper h2, .design-viewer .fusion-column-wrapper h3 {
   color: #fefefe;
 }
 /* line 237, sass/style.scss */
+.design-viewer .fusion-column-wrapper h3 {
+  line-height: 1.2 !important;
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+  margin: 15px 0 20px 0 !important;
+}
+/* line 244, sass/style.scss */
 .design-viewer .fusion-column-wrapper h2 {
+  line-height: 1.2 !important;
   font-size: 1.9em !important;
   margin: 15px 0 !important;
 }
 
-/* line 244, sass/style.scss */
+/* line 252, sass/style.scss */
 .contact-form-holder {
   position: relative;
 }
-/* line 247, sass/style.scss */
+/* line 255, sass/style.scss */
 .contact-form-holder .des-v {
   position: absolute;
   pointer-events: none;
   z-index: 100;
 }
-/* line 252, sass/style.scss */
+/* line 260, sass/style.scss */
 .contact-form-holder .des-v img {
   width: 100%;
 }
-/* line 256, sass/style.scss */
+/* line 264, sass/style.scss */
 .contact-form-holder .des-v.coffee {
   width: 250px;
   left: -100px;
   top: -320px;
 }
-/* line 261, sass/style.scss */
+/* line 269, sass/style.scss */
 .contact-form-holder .des-v.levcer {
   width: 400px;
   left: -70px;
   bottom: -100px;
 }
-/* line 266, sass/style.scss */
+/* line 274, sass/style.scss */
 .contact-form-holder .des-v.klavi {
   width: 550px;
   right: -70px;
   bottom: 50px;
 }
-/* line 273, sass/style.scss */
+/* line 281, sass/style.scss */
 .contact-form-holder .group-holder {
   position: relative;
   z-index: 200;
@@ -299,24 +307,24 @@ body, html {
   margin: 0 auto;
   padding: 0 10%;
 }
-/* line 281, sass/style.scss */
+/* line 289, sass/style.scss */
 .contact-form-holder .group-holder .heading {
   text-align: center;
 }
-/* line 283, sass/style.scss */
+/* line 291, sass/style.scss */
 .contact-form-holder .group-holder .heading h3 {
   font-weight: bold;
   margin: 45px 0;
   color: #656565;
 }
-/* line 291, sass/style.scss */
+/* line 299, sass/style.scss */
 .contact-form-holder label {
   font-weight: bold;
   color: black;
   padding: 0 0 10px 0;
   display: block;
 }
-/* line 298, sass/style.scss */
+/* line 306, sass/style.scss */
 .contact-form-holder input, .contact-form-holder textarea, .contact-form-holder select {
   border: none;
   color: #00b4d2;
@@ -328,49 +336,49 @@ body, html {
   border: 2px solid #ececec;
   border-radius: 4px;
 }
-/* line 309, sass/style.scss */
+/* line 317, sass/style.scss */
 .contact-form-holder select, .contact-form-holder textarea {
   width: 100%;
 }
-/* line 312, sass/style.scss */
+/* line 320, sass/style.scss */
 .contact-form-holder textarea {
   width: 100%;
   max-height: 100%;
   min-height: 400px;
 }
-/* line 317, sass/style.scss */
+/* line 325, sass/style.scss */
 .contact-form-holder .missing {
   border: 2px solid #f7a197;
 }
-/* line 321, sass/style.scss */
+/* line 329, sass/style.scss */
 .contact-form-holder .flxtbl > div {
   padding: 10px;
 }
-/* line 326, sass/style.scss */
+/* line 334, sass/style.scss */
 .contact-form-holder .flxtbl > .name, .contact-form-holder .flxtbl > .email, .contact-form-holder .flxtbl > .phone {
   flex-basis: calc(100%/3);
 }
-/* line 329, sass/style.scss */
+/* line 337, sass/style.scss */
 .contact-form-holder .flxtbl > .temakor {
   flex-basis: calc(100%/3);
 }
-/* line 332, sass/style.scss */
+/* line 340, sass/style.scss */
 .contact-form-holder .flxtbl > .tema {
   flex-basis: 66.666666%;
 }
-/* line 335, sass/style.scss */
+/* line 343, sass/style.scss */
 .contact-form-holder .flxtbl > .uzenet {
   flex-basis: 100%;
 }
-/* line 338, sass/style.scss */
+/* line 346, sass/style.scss */
 .contact-form-holder .flxtbl > .recaptcha {
   flex-basis: 100%;
 }
-/* line 341, sass/style.scss */
+/* line 349, sass/style.scss */
 .contact-form-holder .flxtbl > .btns {
   flex-basis: 100%;
 }
-/* line 345, sass/style.scss */
+/* line 353, sass/style.scss */
 .contact-form-holder .flxtbl button {
   background: #00b4d2;
   color: white;
@@ -381,27 +389,27 @@ body, html {
   border-radius: 5px;
   cursor: pointer;
 }
-/* line 354, sass/style.scss */
+/* line 362, sass/style.scss */
 .contact-form-holder .flxtbl button:hover {
   background: #009eb8;
 }
-/* line 358, sass/style.scss */
+/* line 366, sass/style.scss */
 .contact-form-holder .flxtbl button.in-progress {
   background: #f37769;
 }
-/* line 361, sass/style.scss */
+/* line 369, sass/style.scss */
 .contact-form-holder .flxtbl button.sended {
   background: #51b683;
 }
 
-/* line 368, sass/style.scss */
+/* line 376, sass/style.scss */
 .alert-danger {
   color: #ffffff;
   background-color: #ef6454;
   border-color: #d75647;
 }
 
-/* line 374, sass/style.scss */
+/* line 382, sass/style.scss */
 .contact-design-top {
   height: 430px;
   background-image: url("../../images/contact-temp-top.svg");
@@ -410,35 +418,93 @@ body, html {
   background-size: cover !important;
 }
 
+/* line 390, sass/style.scss */
+.egyedi-megoldasok-holder {
+  background: #f9b540;
+  color: white;
+}
+/* line 394, sass/style.scss */
+.egyedi-megoldasok-holder .heading {
+  background: #f7a20f;
+  padding: 25px 0;
+  text-align: center;
+}
+/* line 398, sass/style.scss */
+.egyedi-megoldasok-holder .heading h2 {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.85em !important;
+  line-height: 1 !important;
+  font-weight: bold !important;
+}
+/* line 409, sass/style.scss */
+.egyedi-megoldasok-holder .items {
+  padding: 25px 0 45px  0;
+}
+/* line 411, sass/style.scss */
+.egyedi-megoldasok-holder .items .item {
+  flex-basis: calc(100%/3);
+  text-align: center;
+}
+/* line 415, sass/style.scss */
+.egyedi-megoldasok-holder .items .item .wrapper {
+  padding: 0 30px;
+}
+/* line 418, sass/style.scss */
+.egyedi-megoldasok-holder .items .item .wrapper .title {
+  margin-bottom: 20px;
+  height: 57px;
+}
+/* line 423, sass/style.scss */
+.egyedi-megoldasok-holder .items .item .wrapper .image {
+  text-align: center;
+}
+/* line 425, sass/style.scss */
+.egyedi-megoldasok-holder .items .item .wrapper .image img {
+  max-width: 75%;
+}
+/* line 431, sass/style.scss */
+.egyedi-megoldasok-holder .items .item a {
+  font-size: 1.6em;
+  line-height: 1.3;
+  color: #58595b;
+}
+/* line 436, sass/style.scss */
+.egyedi-megoldasok-holder .items .item a:hover {
+  color: black;
+}
+
 @keyframes cloudewalkleft {
-  /* line 383, sass/style.scss */
+  /* line 445, sass/style.scss */
   0% {
     margin-right: 0px;
   }
 
-  /* line 384, sass/style.scss */
+  /* line 446, sass/style.scss */
   50% {
     margin-right: 100px;
   }
 
-  /* line 385, sass/style.scss */
+  /* line 447, sass/style.scss */
   100% {
     margin-right: 0px;
   }
 }
 
 @keyframes cloudewalkright {
-  /* line 388, sass/style.scss */
+  /* line 450, sass/style.scss */
   0% {
     margin-left: 0px;
   }
 
-  /* line 389, sass/style.scss */
+  /* line 451, sass/style.scss */
   50% {
     margin-left: 100px;
   }
 
-  /* line 390, sass/style.scss */
+  /* line 452, sass/style.scss */
   100% {
     margin-left: 0px;
   }

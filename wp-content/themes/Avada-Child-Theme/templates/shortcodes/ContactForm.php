@@ -7,9 +7,13 @@
 <div class="des-v klavi">
   <img src="<?=IMG?>/klaviatura.svg" alt="Klaviatúra">
 </div>
+<a name="_form"></a>
 <div class="group-holder">
   <div class="heading">
     <h3>Bátran vegye fel a kapcsolatot velünk, bármilyen kérdése merül fel.</h3>
+    <?php if (isset($_GET['targy'])): ?>
+      <h1 style="font-size:2em;">Gyors ajánlatkérés az alábbi form segítségével:</h1>
+    <?php endif; ?>
   </div>
   <form id="mailsend" action="" method="post">
     <div class="flxtbl">
@@ -44,7 +48,7 @@
       <div class="tema">
         <label for="targy">Üzenet tárgya *</label>
         <div class="form-input-holder">
-          <input type="text" id="targy" name="targy" class="form-control" value="">
+          <input type="text" id="targy" name="targy" class="form-control" value="<?=(isset($_GET['targy'])?$_GET['targy']:'')?>">
         </div>
       </div>
       <div class="uzenet">

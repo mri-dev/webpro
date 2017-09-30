@@ -230,11 +230,19 @@ body,html {
     font-size: 1.1em !important;
     color: #fefefe;
 
-    h1, h2 {
+    h1, h2, h3 {
       color: #fefefe;
     }
 
+    h3 {
+      line-height: 1.2 !important;
+      font-size: 1.5em !important;
+      font-weight: bold !important;
+      margin: 15px 0 20px 0 !important;
+    }
+
     h2 {
+      line-height: 1.2 !important;
       font-size: 1.9em !important;
       margin: 15px 0 !important;
     }
@@ -377,6 +385,60 @@ body,html {
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
+}
+
+.egyedi-megoldasok-holder{
+  background: #f9b540;
+  color: white;
+
+  .heading{
+    background: darken(#f9b540, 10%);
+    padding: 25px 0;
+    text-align: center;
+    h2{
+      margin: 0;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.85em !important;
+      line-height: 1 !important;
+      font-weight: bold !important;
+    }
+  }
+
+  .items{
+    padding: 25px 0 45px  0;
+    .item {
+      flex-basis: calc(100%/3);
+      text-align: center;
+
+      .wrapper{
+        padding: 0 30px;
+
+        .title{
+          margin-bottom: 20px;
+          height: 57px;
+        }
+
+        .image{
+          text-align: center;
+          img{
+            max-width: 75%;
+          }
+        }
+      }
+
+      a{
+        font-size: 1.6em;
+        line-height: 1.3;
+        color: #58595b;
+
+        &:hover{
+          color: black;
+        }
+      }
+    }
+  }
 }
 
 @keyframes cloudewalkleft {
