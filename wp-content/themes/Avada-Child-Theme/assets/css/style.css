@@ -450,7 +450,7 @@ body, html {
 }
 /* line 415, sass/style.scss */
 .egyedi-megoldasok-holder .items .item .wrapper {
-  padding: 0 30px;
+  padding: 15px 30px;
 }
 /* line 418, sass/style.scss */
 .egyedi-megoldasok-holder .items .item .wrapper .title {
@@ -476,35 +476,84 @@ body, html {
   color: black;
 }
 
+/* line 444, sass/style.scss */
+.price-ico {
+  margin: 0 0 10px 0;
+}
+
+/* line 449, sass/style.scss */
+.svgdesign-holder .imgholder {
+  text-align: center;
+}
+
+/* line 454, sass/style.scss */
+.table-1, .table-2, .tkt-slctr-tbl-wrap-dv {
+  border: 3px solid #ececec;
+}
+/* line 457, sass/style.scss */
+.table-1 i, .table-2 i, .tkt-slctr-tbl-wrap-dv i {
+  width: 25px;
+  color: #00b4d2;
+  font-size: 18px;
+  vertical-align: middle;
+}
+/* line 463, sass/style.scss */
+.table-1 i[class*=check-circle-o], .table-2 i[class*=check-circle-o], .tkt-slctr-tbl-wrap-dv i[class*=check-circle-o] {
+  color: #93d075;
+  font-size: 22px;
+}
+
+/* line 468, sass/style.scss */
+.table-1 table th, .tkt-slctr-tbl-wrap-dv table th {
+  font-size: 16px;
+  color: black;
+}
+
+/* line 474, sass/style.scss */
+.fusion-main-menu .button-icon-divider-left {
+  border-right: none !important;
+}
+/* line 477, sass/style.scss */
+.fusion-main-menu .fusion-button-text-left {
+  padding-left: 10px !important;
+}
+/* line 480, sass/style.scss */
+.fusion-main-menu .button-default {
+  background: transparent !important;
+  border: 2px solid #ffd47f !important;
+  color: #ffd47f !important;
+  border-radius: 4px;
+}
+
 @keyframes cloudewalkleft {
-  /* line 445, sass/style.scss */
+  /* line 489, sass/style.scss */
   0% {
     margin-right: 0px;
   }
 
-  /* line 446, sass/style.scss */
+  /* line 490, sass/style.scss */
   50% {
     margin-right: 100px;
   }
 
-  /* line 447, sass/style.scss */
+  /* line 491, sass/style.scss */
   100% {
     margin-right: 0px;
   }
 }
 
 @keyframes cloudewalkright {
-  /* line 450, sass/style.scss */
+  /* line 494, sass/style.scss */
   0% {
     margin-left: 0px;
   }
 
-  /* line 451, sass/style.scss */
+  /* line 495, sass/style.scss */
   50% {
     margin-left: 100px;
   }
 
-  /* line 452, sass/style.scss */
+  /* line 496, sass/style.scss */
   100% {
     margin-left: 0px;
   }

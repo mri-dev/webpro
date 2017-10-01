@@ -413,7 +413,7 @@ body,html {
       text-align: center;
 
       .wrapper{
-        padding: 0 30px;
+        padding: 15px 30px;
 
         .title{
           margin-bottom: 20px;
@@ -438,6 +438,50 @@ body,html {
         }
       }
     }
+  }
+}
+
+.price-ico{
+  margin: 0 0 10px 0;
+}
+
+.svgdesign-holder{
+  .imgholder{
+    text-align: center;
+  }
+}
+
+.table-1, .table-2, .tkt-slctr-tbl-wrap-dv {
+    border: 3px solid #ececec;
+
+    i{
+      width: 25px;
+      color: $color-blue;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+    i[class*=check-circle-o] {
+      color: #93d075;
+      font-size: 22px;
+    }
+}
+.table-1 table th, .tkt-slctr-tbl-wrap-dv table th{
+  font-size: 16px;
+  color: black;
+}
+
+.fusion-main-menu{
+  .button-icon-divider-left{
+    border-right: none !important;
+  }
+  .fusion-button-text-left{
+    padding-left: 10px !important;
+  }
+  .button-default{
+    background: transparent !important;
+    border: 2px solid #ffd47f !important;
+    color: #ffd47f !important;
+    border-radius: 4px;
   }
 }
 

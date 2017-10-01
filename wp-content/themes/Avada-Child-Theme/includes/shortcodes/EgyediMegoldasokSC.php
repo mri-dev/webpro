@@ -30,7 +30,9 @@ class EgyediMegoldasokSC
 
         $datas = new WP_Query(array(
           'post_parent' => $egyedi_megoldasok->ID,
-          'post_type' => 'page'
+          'post_type' => 'page',
+          'orderby' => 'menu_order',
+          'order' => 'ASC'
         ));
         $attr['data'] = $datas;
 

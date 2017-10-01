@@ -14,20 +14,20 @@ class SVGDesignSC
 
     public function do_shortcode( $attr, $content = null )
     {
-        $output = '<div class="'.self::SCTAG.'-holder">';
-
     	  /* Set up the default arguments. */
         $defaults = apply_filters(
             self::SCTAG.'_defaults',
             array(
-              'key' => 'none'
+              'key' => 'none',
+              'width' => 100,
+              'padding' => 0
             )
         );
         /* Parse the arguments. */
         $attr = shortcode_atts( $defaults, $attr );
-
+        
+        $output = '<div class="'.self::SCTAG.'-holder style-'.$attr['key'].'">';
         $output .= (new ShortcodeTemplates('svgdesign'))->load_template($attr);
-
         $output .= '</div>';
 
         /* Return the output of the tooltip. */
