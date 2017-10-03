@@ -525,36 +525,122 @@ body, html {
   border-radius: 4px;
 }
 
+/* line 488, sass/style.scss */
+.szolg-list {
+  color: white;
+}
+/* line 492, sass/style.scss */
+.szolg-list ul li {
+  font-size: 1.4em;
+  list-style: none;
+  margin: 15px 0;
+}
+/* line 496, sass/style.scss */
+.szolg-list ul li:before {
+  font-family: 'FontAwesome';
+  vertical-align: middle;
+  content: "\f058";
+  margin-left: -25px;
+  margin-right: 13px;
+}
+
 @keyframes cloudewalkleft {
-  /* line 489, sass/style.scss */
+  /* line 508, sass/style.scss */
   0% {
     margin-right: 0px;
   }
 
-  /* line 490, sass/style.scss */
+  /* line 509, sass/style.scss */
   50% {
     margin-right: 100px;
   }
 
-  /* line 491, sass/style.scss */
+  /* line 510, sass/style.scss */
   100% {
     margin-right: 0px;
   }
 }
 
 @keyframes cloudewalkright {
-  /* line 494, sass/style.scss */
+  /* line 513, sass/style.scss */
   0% {
     margin-left: 0px;
   }
 
-  /* line 495, sass/style.scss */
+  /* line 514, sass/style.scss */
   50% {
     margin-left: 100px;
   }
 
-  /* line 496, sass/style.scss */
+  /* line 515, sass/style.scss */
   100% {
     margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  /* line 522, sass/style.scss */
+  .page-width,
+  .contact-form-holder .group-holder,
+  .design-viewer > .fusion-column-wrapper,
+  #main .fusion-row, #slidingbar-area .fusion-row, .fusion-footer-copyright-area .fusion-row, .fusion-footer-widget-area .fusion-row, .fusion-page-title-row, .tfs-slider .slide-content-container .slide-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* line 526, sass/style.scss */
+  .fusion-layout-column > .fusion-column-wrapper {
+    padding: 0 25px;
+  }
+
+  /* line 529, sass/style.scss */
+  .fusion-layout-column.design-viewer > .fusion-column-wrapper {
+    padding: 35px 0;
+  }
+
+  /* line 532, sass/style.scss */
+  .fusion-main-menu > ul > li {
+    padding-right: 25px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 538, sass/style.scss */
+  .design-viewer .fusion-layout-column {
+    width: 50% !important;
+  }
+
+  /* line 541, sass/style.scss */
+  .homemaindesign-holder .designholder .designbox {
+    min-height: 280px;
+  }
+
+  /* line 544, sass/style.scss */
+  .homemaindesign-holder .bottom-bar a {
+    font-size: 0.85em;
+  }
+
+  /* line 547, sass/style.scss */
+  .fusion-mobile-menu-icons a:before {
+    color: #f37b6d;
+    font-size: 28px;
+  }
+
+  /* line 551, sass/style.scss */
+  .fusion-mobile-menu-icons a {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: block;
+  }
+
+  /* line 557, sass/style.scss */
+  .egyedi-megoldasok-holder .items .item a {
+    font-size: 1.2em;
+  }
+
+  /* line 560, sass/style.scss */
+  .design-viewer .fusion-column-wrapper h2 {
+    font-size: 1.4em !important;
+    margin: 10px 0 !important;
   }
 }
