@@ -32,13 +32,13 @@
   <div class="page-width">
     <div class="flxtbl ic3">
       <div class="tervez">
-        <a href="#">Egyedi weboldalak megtervezése</a>
+        <a href="/szolgaltatasaink/#szolgaltatasok">Egyedi weboldalak megtervezése</a>
       </div>
       <div class="kivitelez">
-        <a href="#">Weboldalak fejlesztése</a>
+        <a href="/araink/#fejlesztes">Weboldalak fejlesztése</a>
       </div>
       <div class="hosting">
-        <a href="#">Szuper biztonságos és gyors hosting</a>
+        <a href="/araink/#tarhely">Szuper biztonságos és gyors hosting</a>
       </div>
     </div>
   </div>
