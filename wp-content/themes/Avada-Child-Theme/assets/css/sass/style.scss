@@ -213,11 +213,13 @@ body,html {
 }
 
 .design-viewer{
+
   .svgdesign-holder.style-webdesign{
     img{
       max-width: 70% !important;
     }
   }
+
   & > .fusion-column-wrapper{
     width: $page-width;
     margin: 0 auto;
@@ -233,6 +235,12 @@ body,html {
           margin: 0 !important;
         }
       }
+  }
+
+  &.align-to-bottom {
+    & > .fusion-column-wrapper{
+      padding: 0;
+    }
   }
 
   .fusion-column-wrapper{

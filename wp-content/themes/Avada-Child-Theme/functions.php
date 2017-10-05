@@ -1,11 +1,11 @@
 <?php
 define('PROTOCOL', 'https');
-define('TARGETDOMAIN', 'beta.web-pro.hu');
+define('TARGETDOMAIN', 'web-pro.hu');
 define('DOMAIN', $_SERVER['HTTP_HOST']);
 define('IFROOT', str_replace(get_option('siteurl'), '//'.DOMAIN, get_stylesheet_directory_uri()));
 define('DEVMODE', true);
 define('IMG', IFROOT.'/images');
-define('GOOGLE_API_KEY', ''); 
+define('GOOGLE_API_KEY', '');
 define('LANGKEY','hu');
 define('FB_APP_ID', '');
 define('DEFAULT_LANGUAGE', 'hu_HU');
@@ -30,7 +30,6 @@ function app_enqueue_styles() {
     wp_enqueue_style( 'app', IFROOT . '/assets/css/style.css?t=' . ( (DEVMODE === true) ? time() : '' ) );
 }
 add_action( 'wp_enqueue_scripts', 'app_enqueue_styles', 100 );
-
 
 function add_opengraph_doctype( $output ) {
 	return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
