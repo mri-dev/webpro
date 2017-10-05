@@ -5,7 +5,7 @@ define('DOMAIN', $_SERVER['HTTP_HOST']);
 define('IFROOT', str_replace(get_option('siteurl'), '//'.DOMAIN, get_stylesheet_directory_uri()));
 define('DEVMODE', true);
 define('IMG', IFROOT.'/images');
-define('GOOGLE_API_KEY', '');
+define('GOOGLE_API_KEY', ''); 
 define('LANGKEY','hu');
 define('FB_APP_ID', '');
 define('DEFAULT_LANGUAGE', 'hu_HU');
