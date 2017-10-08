@@ -99,20 +99,19 @@ function rd_init()
 {
   date_default_timezone_set('Europe/Budapest');
 
-  /*
-  $kutyak = new PostTypeFactory( 'kutyafajtak' );
-	$kutyak->set_textdomain( TD );
-	$kutyak->set_icon('tag');
-	$kutyak->set_name( 'Kutya fajta', 'Kutya fajták' );
-	$kutyak->set_labels( array(
+  $ref = new PostTypeFactory( 'webproref' );
+	$ref->set_textdomain( TD );
+	$ref->set_icon('tag');
+	$ref->set_name( 'Referencia', 'Referenciák' );
+	$ref->set_labels( array(
 		'add_new' => 'Új %s',
 		'not_found_in_trash' => 'Nincsenek %s a lomtárban.',
 		'not_found' => 'Nincsenek %s a listában.',
 		'add_new_item' => 'Új %s létrehozása',
 	) );
-	//$kutyak->set_metabox_cb('pp_kupon_metaboxes');
-	$kutyak->create();
-  */
+	//$ref->set_metabox_cb('pp_kupon_metaboxes');
+	$ref->create();
+
 }
 add_action('init', 'rd_init');
 

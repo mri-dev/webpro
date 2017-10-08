@@ -3,4 +3,5 @@
   require_once "ContactFormSC.php";
   require_once "EgyediMegoldasokSC.php";
   require_once "HomeMainDesign.php";
+  require_once "WebproReferenciak.php";
 ?>
