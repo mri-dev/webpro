@@ -544,6 +544,57 @@ body,html {
   }
 }
 
+.webpro-referenciak-holder{
+  .ref-selector{
+    & > .wrapper{
+      background-image: url('../../images/ref-cloud-bg.svg');
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 600px;
+      padding: 25px 0;
+
+      .referenciak{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+
+        .referencia {
+          flex-basis: calc(100%/4);
+          padding: 25px;
+
+          .img{
+            border: 8px solid #d2d2d2;
+          }
+
+          .title{
+            text-align: center;
+            padding: 5px 0;
+            a {
+              color: black;
+              font-size: 1.2em;
+            }
+          }
+          &:hover{
+            .img {
+              border: 8px solid $color-laz;
+            }
+            .title{
+              a {
+                color: $color-laz;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ref-list{
+
+  }
+}
+
 @keyframes cloudewalkleft {
   0% { margin-right: 0px;}
   50% { margin-right: 100px; }

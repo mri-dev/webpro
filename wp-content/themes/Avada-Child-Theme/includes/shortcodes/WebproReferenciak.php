@@ -25,6 +25,11 @@ class WebproReferenciaSC
 
         $output = '<div class="'.self::SCTAG.'-holder style-'.$attr['key'].'">';
 
+        $ref = new WP_Query(array(
+          'post_type' => 'webproref'
+        ));
+        $attr['ref'] = $ref;
+
         // Header
         $output .= (new ShortcodeTemplates('webproreferencia-selector'))->load_template($attr);
 
