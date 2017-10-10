@@ -109,11 +109,16 @@ function rd_init()
 		'not_found' => 'Nincsenek %s a listában.',
 		'add_new_item' => 'Új %s létrehozása',
 	) );
-	//$ref->set_metabox_cb('pp_kupon_metaboxes');
+	$ref->set_metabox_cb('weproref_metaboxes');
 	$ref->create();
 
 }
 add_action('init', 'rd_init');
+
+function weproref_metaboxes()
+{
+  
+}
 
 
 function rd_query_vars($aVars) {
