@@ -553,6 +553,7 @@ body,html {
       background-size: cover;
       min-height: 600px;
       padding: 25px 0;
+      border-bottom: 10px solid #dbdbdb;
 
       .referenciak{
         display: -webkit-box;
@@ -591,7 +592,113 @@ body,html {
     }
   }
   .ref-list{
+    .informations{
+      padding: 35px 0;
+      .base-wire{
+        align-items: center;
+        .info-wire{
+          align-items: flex-start;
+          .profil{
+            flex-basis: 30%;
+            border: 8px solid #d2d2d2;
+          }
+          .info {
+            flex-basis: 70%;
+            color: #58595b;
+            padding-left: 25px;
+            h3 {
+              font-size: 2em;
+              color: #666666;
+              margin: 0 0 10px 0;
+            }
 
+            .desc {
+              margin-top: 15px;
+              .h{
+                font-size: 1.3em;
+                margin: 0 0 10px 0;
+              }
+
+              ul, li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+              }
+
+              ul {
+                li:before {
+                  content: "\f05d";
+                  font-family: 'FontAwesome';
+                  margin-right: 4px;
+                }
+              }
+            }
+          }
+          .link {
+            a{
+              background-color: #888888;
+              font-size: 0.9em;
+              color: white;
+              text-decoration: none;
+              padding: 5px;
+              line-height: 1;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+            }
+          }
+        }
+
+        .info-block{
+          flex-basis: 60%;
+        }
+
+        .cover-block{
+          flex-basis: 40%;
+          box-shadow: 0 20px 50px -20px #000000;
+          border-radius: 10px;
+          overflow: hidden;
+
+          img{
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      .keywords{
+        padding-top: 25px;
+        & > div {
+          float:left;
+          font-size: 0.75em;
+          background: #fff;
+          color: #a5a5a5;
+          border-radius: 5px;
+          line-height: 1;
+          margin: 4px;
+          padding: 5px;
+        }
+      }
+    }
+    .szalag{
+      background: #58595b;
+      color: white;
+      text-align: center;
+      font-size: 1.8em;
+      padding: 20px 0;
+
+      &.contact-ad{
+        background: #323232;
+        font-size: 1.2em;
+        padding: 15px 0;
+
+        a.totop{
+          font-size: 0.6em;
+          color: #959595;
+          margin-left: 25px;
+        }
+      }
+    }
   }
 }
 

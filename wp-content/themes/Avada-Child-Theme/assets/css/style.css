@@ -589,78 +589,192 @@ body, html {
   background-size: cover;
   min-height: 600px;
   padding: 25px 0;
+  border-bottom: 10px solid #dbdbdb;
 }
-/* line 557, sass/style.scss */
+/* line 558, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 563, sass/style.scss */
+/* line 564, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia {
   flex-basis: calc(100%/4);
   padding: 25px;
 }
-/* line 567, sass/style.scss */
+/* line 568, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia .img {
   border: 8px solid #d2d2d2;
 }
-/* line 571, sass/style.scss */
+/* line 572, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia .title {
   text-align: center;
   padding: 5px 0;
 }
-/* line 574, sass/style.scss */
+/* line 575, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia .title a {
   color: black;
   font-size: 1.2em;
 }
-/* line 580, sass/style.scss */
+/* line 581, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia:hover .img {
   border: 8px solid #f37769;
 }
-/* line 584, sass/style.scss */
+/* line 585, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia:hover .title a {
   color: #f37769;
 }
+/* line 595, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations {
+  padding: 35px 0;
+}
+/* line 597, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire {
+  align-items: center;
+}
+/* line 599, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .info-wire {
+  align-items: flex-start;
+}
+/* line 601, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .profil {
+  flex-basis: 30%;
+  border: 8px solid #d2d2d2;
+}
+/* line 605, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info {
+  flex-basis: 70%;
+  color: #58595b;
+  padding-left: 25px;
+}
+/* line 609, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info h3 {
+  font-size: 2em;
+  color: #666666;
+  margin: 0 0 10px 0;
+}
+/* line 615, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc {
+  margin-top: 15px;
+}
+/* line 617, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc .h {
+  font-size: 1.3em;
+  margin: 0 0 10px 0;
+}
+/* line 622, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc ul, .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 629, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc ul li:before {
+  content: "\f05d";
+  font-family: 'FontAwesome';
+  margin-right: 4px;
+}
+/* line 638, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .link a {
+  background-color: #888888;
+  font-size: 0.9em;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  line-height: 1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 652, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .info-block {
+  flex-basis: 60%;
+}
+/* line 656, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .cover-block {
+  flex-basis: 40%;
+  box-shadow: 0 20px 50px -20px black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* line 662, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .base-wire .cover-block img {
+  max-width: 100%;
+  width: 100%;
+}
+/* line 669, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .keywords {
+  padding-top: 25px;
+}
+/* line 671, sass/style.scss */
+.webpro-referenciak-holder .ref-list .informations .keywords > div {
+  float: left;
+  font-size: 0.75em;
+  background: #fff;
+  color: #a5a5a5;
+  border-radius: 5px;
+  line-height: 1;
+  margin: 4px;
+  padding: 5px;
+}
+/* line 683, sass/style.scss */
+.webpro-referenciak-holder .ref-list .szalag {
+  background: #58595b;
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 20px 0;
+}
+/* line 690, sass/style.scss */
+.webpro-referenciak-holder .ref-list .szalag.contact-ad {
+  background: #323232;
+  font-size: 1.2em;
+  padding: 15px 0;
+}
+/* line 695, sass/style.scss */
+.webpro-referenciak-holder .ref-list .szalag.contact-ad a.totop {
+  font-size: 0.6em;
+  color: #959595;
+  margin-left: 25px;
+}
 
 @keyframes cloudewalkleft {
-  /* line 599, sass/style.scss */
+  /* line 706, sass/style.scss */
   0% {
     margin-right: 0px;
   }
 
-  /* line 600, sass/style.scss */
+  /* line 707, sass/style.scss */
   50% {
     margin-right: 100px;
   }
 
-  /* line 601, sass/style.scss */
+  /* line 708, sass/style.scss */
   100% {
     margin-right: 0px;
   }
 }
 
 @keyframes cloudewalkright {
-  /* line 604, sass/style.scss */
+  /* line 711, sass/style.scss */
   0% {
     margin-left: 0px;
   }
 
-  /* line 605, sass/style.scss */
+  /* line 712, sass/style.scss */
   50% {
     margin-left: 100px;
   }
 
-  /* line 606, sass/style.scss */
+  /* line 713, sass/style.scss */
   100% {
     margin-left: 0px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  /* line 613, sass/style.scss */
+  /* line 720, sass/style.scss */
   .page-width,
   .contact-form-holder .group-holder,
   .design-viewer > .fusion-column-wrapper,
@@ -669,39 +783,39 @@ body, html {
     max-width: 100% !important;
   }
 
-  /* line 617, sass/style.scss */
+  /* line 724, sass/style.scss */
   .fusion-layout-column > .fusion-column-wrapper {
     padding: 0 25px;
   }
 
-  /* line 620, sass/style.scss */
+  /* line 727, sass/style.scss */
   .fusion-layout-column.design-viewer > .fusion-column-wrapper {
     padding: 35px 0;
   }
 
-  /* line 623, sass/style.scss */
+  /* line 730, sass/style.scss */
   .fusion-main-menu > ul > li {
     padding-right: 25px !important;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 629, sass/style.scss */
+  /* line 736, sass/style.scss */
   .homemaindesign-holder .designholder .designbox {
     min-height: 280px;
   }
 
-  /* line 632, sass/style.scss */
+  /* line 739, sass/style.scss */
   .homemaindesign-holder .bottom-bar a {
     font-size: 0.85em;
   }
 
-  /* line 635, sass/style.scss */
+  /* line 742, sass/style.scss */
   .fusion-mobile-menu-icons a:before {
     color: #f37b6d;
     font-size: 28px;
   }
 
-  /* line 639, sass/style.scss */
+  /* line 746, sass/style.scss */
   .fusion-mobile-menu-icons a {
     position: absolute;
     right: 0;
@@ -709,126 +823,126 @@ body, html {
     display: block;
   }
 
-  /* line 645, sass/style.scss */
+  /* line 752, sass/style.scss */
   .egyedi-megoldasok-holder .items .item a {
     font-size: 1.2em;
   }
 
-  /* line 648, sass/style.scss */
+  /* line 755, sass/style.scss */
   .design-viewer .fusion-column-wrapper h2 {
     font-size: 1.4em !important;
     margin: 10px 0 !important;
   }
 
-  /* line 652, sass/style.scss */
+  /* line 759, sass/style.scss */
   .flxtbl.ic3 > div {
     flex-basis: 100%;
   }
 
-  /* line 655, sass/style.scss */
+  /* line 762, sass/style.scss */
   .homemaindesign-holder .designholder {
     display: none;
   }
 
-  /* line 660, sass/style.scss */
+  /* line 767, sass/style.scss */
   .design-viewer > .fusion-column-wrapper {
     padding: 25px !important;
   }
-  /* line 664, sass/style.scss */
+  /* line 771, sass/style.scss */
   .design-viewer .svgdesign-holder img {
     max-width: 70% !important;
   }
-  /* line 670, sass/style.scss */
+  /* line 777, sass/style.scss */
   .design-viewer > .fusion-column-wrapper > .fusion-builder-row > .fusion-layout-column {
     flex-basis: 100% !important;
     text-align: center !important;
   }
-  /* line 677, sass/style.scss */
+  /* line 784, sass/style.scss */
   .design-viewer.img-on-right .fusion-button-wrapper {
     display: block;
     text-align: center;
     float: none;
   }
-  /* line 682, sass/style.scss */
+  /* line 789, sass/style.scss */
   .design-viewer.img-on-right h2, .design-viewer.img-on-right p {
     text-align: center !important;
   }
-  /* line 685, sass/style.scss */
+  /* line 792, sass/style.scss */
   .design-viewer.img-on-right .fusion-layout-column.fusion-column-last {
     order: 0 !important;
   }
-  /* line 688, sass/style.scss */
+  /* line 795, sass/style.scss */
   .design-viewer.img-on-right .fusion-layout-column.fusion-column-first {
     order: 1 !important;
   }
-  /* line 693, sass/style.scss */
+  /* line 800, sass/style.scss */
   .design-viewer.img-on-left .fusion-button-wrapper {
     display: block;
     text-align: center;
     float: none;
   }
-  /* line 698, sass/style.scss */
+  /* line 805, sass/style.scss */
   .design-viewer.img-on-left h2, .design-viewer.img-on-left p {
     text-align: center !important;
   }
-  /* line 701, sass/style.scss */
+  /* line 808, sass/style.scss */
   .design-viewer.img-on-left .fusion-layout-column.fusion-column-last {
     order: 1 !important;
   }
-  /* line 704, sass/style.scss */
+  /* line 811, sass/style.scss */
   .design-viewer.img-on-left .fusion-layout-column.fusion-column-first {
     order: 0 !important;
   }
 
-  /* line 709, sass/style.scss */
+  /* line 816, sass/style.scss */
   .egyedi-megoldasok-holder .items .item {
     flex-basis: 100%;
   }
 
-  /* line 712, sass/style.scss */
+  /* line 819, sass/style.scss */
   .egyedi-megoldasok-holder .items .item .wrapper .title {
     height: auto;
     font-size: 1.5em;
     font-weight: bold;
   }
 
-  /* line 717, sass/style.scss */
+  /* line 824, sass/style.scss */
   .contact-design-top {
     height: 200px;
   }
 
-  /* line 720, sass/style.scss */
+  /* line 827, sass/style.scss */
   .contact-form-holder .des-v {
     display: none;
   }
 
-  /* line 723, sass/style.scss */
+  /* line 830, sass/style.scss */
   .contact-form-holder .group-holder {
     padding: 0 25px !important;
   }
 
-  /* line 726, sass/style.scss */
+  /* line 833, sass/style.scss */
   .contact-form-holder .flxtbl > div {
     flex-basis: 100% !important;
   }
 
-  /* line 729, sass/style.scss */
+  /* line 836, sass/style.scss */
   .munkatars-lista {
     padding: 25px 0 0 0 !important;
   }
 
-  /* line 732, sass/style.scss */
+  /* line 839, sass/style.scss */
   .contact-form-holder .group-holder .heading h3 {
     margin: 20px 0;
   }
 
-  /* line 735, sass/style.scss */
+  /* line 842, sass/style.scss */
   #main {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
 
-  /* line 739, sass/style.scss */
+  /* line 846, sass/style.scss */
   .fusion-layout-column > .fusion-column-wrapper {
     padding: 0px;
   }

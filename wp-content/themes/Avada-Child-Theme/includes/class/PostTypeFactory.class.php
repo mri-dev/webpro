@@ -93,7 +93,7 @@ class PostTypeFactory
 			'labels' => $labels,
 			'public' => true,
 			'show_ui' => true,
-			'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
+			'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes', 'custom-fields' ),
 			'capability_type' => 'page',
 			'menu_icon' => 'dashicons-'.$this->post_icon,
 			'has_archive' => true,
