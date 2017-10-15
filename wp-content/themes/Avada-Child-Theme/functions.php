@@ -117,9 +117,82 @@ add_action('init', 'rd_init');
 
 function weproref_metaboxes()
 {
-  
+  add_meta_box('webpro_ref_mb', 'Referencia beállítások', 'webpro_ref_mb', 'webproref');
 }
 
+function webpro_ref_mb()
+{
+  global $post;
+
+  // Noncename needed to verify where the data originated
+	echo '<input type="hidden" name="webproref_noncename" id="webproref_noncename" value="' .
+	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
+
+  $key = 'websiteurl';
+	$val = get_post_meta($post->ID, $key, true);
+  echo '<p><label for="webprohuref_'.$key.'" class="post-attributes-label">Weboldal URL</label></p>';
+  echo '<input type="text" id="webprohuref_'.$key.'" name="'.$key.'" value="' . $val  . '" class="widefat" />';
+
+  $key = 'colorid';
+	$val = get_post_meta($post->ID, $key, true);
+  echo '<p><label for="webprohuref_'.$key.'" class="post-attributes-label">Stílus színkód (CSS {color} kód)</label></p>';
+  echo '<input type="text" id="webprohuref_'.$key.'" name="'.$key.'" value="' . $val  . '" class="widefat" />';
+
+  $key = 'keywords';
+	$val = get_post_meta($post->ID, $key, true);
+  echo '<p><label for="webprohuref_'.$key.'" class="post-attributes-label">Kulcsszavak, vesszővel elválasztva</label></p>';
+  echo '<textarea id="webprohuref_'.$key.'" class="widefat" name="'.$key.'">' . $val  . '</textarea>';
+
+  $key = 'coverimg';
+	$val = get_post_meta($post->ID, $key, true);
+  echo '<p><label for="webprohuref_'.$key.'" class="post-attributes-label">Promó kép</label></p>';
+  echo '<input type="text" id="webprohuref_'.$key.'" name="'.$key.'" value="' . $val  . '" class="widefat" />';
+
+  $key = 'galleryid';
+	$val = get_post_meta($post->ID, $key, true);
+  echo '<p><label for="webprohuref_'.$key.'" class="post-attributes-label">Galéria ID</label></p>';
+  echo '<input type="number" min="1" id="webprohuref_'.$key.'" name="'.$key.'" value="' . $val  . '" class="widefat" />';
+
+  $key = 'include_customshortcodes';
+	$val = get_post_meta($post->ID, $key, true);
+  echo '<p><label for="webprohuref_'.$key.'" class="post-attributes-label">"EgyediMegoldasok" shortcode megjelenítési template (vesszővel elválasztva, egymás után)</label></p>';
+  echo '<input type="text" id="webprohuref_'.$key.'" name="'.$key.'" value="' . $val  . '" class="widefat" />';
+
+
+}
+
+function webprohu_save_posttype_meta( $post_id, $post )
+{
+	if ( !wp_verify_nonce( $_POST['webproref_noncename'], plugin_basename(__FILE__) )) {
+	   return $post->ID;
+	}
+
+	if ( !current_user_can( 'edit_post', $post->ID )) return $post->ID;
+
+  $events_meta = array();
+
+  $events_meta['websiteurl'] = $_POST['websiteurl'];
+  $events_meta['colorid'] = $_POST['colorid'];
+  $events_meta['keywords'] = $_POST['keywords'];
+  $events_meta['coverimg'] = $_POST['coverimg'];
+  $events_meta['galleryid'] = $_POST['galleryid'];
+  $events_meta['include_customshortcodes'] = $_POST['include_customshortcodes'];
+
+  foreach ((array)$events_meta as $key => $value) { // Cycle through the $events_meta array!
+		if( $post->post_type == 'revision' ) return; // Don't store custom data twice
+		$value = implode(',', (array)$value); // If $value is an array, make it a CSV (unlikely)
+		if(get_post_meta($post->ID, $key, FALSE)) { // If the custom field already has a value
+			update_post_meta($post->ID, $key, $value);
+		} else { // If the custom field doesn't have a value
+			add_post_meta($post->ID, $key, $value);
+		}
+		if(!$value) delete_post_meta($post->ID, $key); // Delete if blank
+	}
+
+
+}
+
+add_action('save_post', 'webprohu_save_posttype_meta', 1, 2);
 
 function rd_query_vars($aVars) {
   return $aVars;
@@ -149,18 +222,20 @@ function after_logo_content()
 add_filter('avada_logo_append', 'after_logo_content');
 
 
-/* GOOGLE ANALYTICS */
-if( defined('DEVMODE') && DEVMODE === false ) {
-	function ga_tracking_code () {
-		?>
-		<script>
+function jscustomcode () {
+  ?>
+  <script>
+    (function($){
+      $('*[data-egyedimegoldas-switch]').click(function(){
+        var uid = $(this).data('egyedimegoldas-switch');
+        $('.content-switch-holder#egyedimegoldas-switch-id'+uid).stop().slideToggle(400);
+      });
+    })(jQuery);
 
-
-		</script>
-		<?
-	}
-	add_action('wp_footer', 'ga_tracking_code');
+  </script>
+  <?
 }
+add_action('wp_footer', 'jscustomcode');
 
 function memory_convert($size)
 {

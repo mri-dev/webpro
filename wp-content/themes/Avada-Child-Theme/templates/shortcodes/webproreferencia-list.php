@@ -12,6 +12,11 @@
           $website = get_post_meta($post->ID, 'websiteurl', true);
           $colorid = get_post_meta($post->ID, 'colorid', true);
           $coverimg = get_post_meta($post->ID, 'coverimg', true);
+          $customshortcodes = get_post_meta($post->ID, 'include_customshortcodes', true);
+
+          if (!empty($customshortcodes)) {
+            $xcustomshortcodes = explode(",",$customshortcodes);
+          }
 
           $keywords = array();
           if(get_post_meta($post->ID, 'keywords', true) != '') {
@@ -74,11 +79,21 @@
               EGYEDI MEGOLDÁSOK WEBÁRUHÁZ RENDSZERÜNK SEGÍTSÉGÉVEL
             </div>
           </div>
+          <?php if (!empty($xcustomshortcodes)): ?>
+          <?php foreach ( (array)$xcustomshortcodes as $sc ): ?>
+            <?php echo do_shortcode('[EgyediMegoldasok key="'.$sc.'"]'); ?>
+          <?php endforeach; ?>
+          <?php endif; ?>
+          <?php
+            $gallery_id = (int)get_post_meta($post->ID, 'galleryid', true);
+          ?>
+          <?php if ($gallery_id != 0): ?>
           <div class="galery">
             <div class="page-width">
-              galéria
+              <?php echo photo_gallery($gallery_id); ?>
             </div>
           </div>
+          <?php endif; ?>
           <div class="szalag contact-ad">
             <div class="page-width">
               <a href="/kapcsolat/#_form">Ön is szeretné, ha egyedi weboldala legyen? Írjon nekünk!</a> <a class="totop" href="#top">lap tetejére <i class="fa fa-angle-up"></i></a>
