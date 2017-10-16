@@ -27,13 +27,15 @@
           }
 
         ?>
+        <?php if (!empty($colorid)): ?>
         <style media="screen">
-          .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc ul li:before{
+          .webpro-referenciak-holder .ref-list .referencia-item.pg<?=$post->ID?> .informations .base-wire .info-wire .info .desc ul li:before{
             color: <?=$colorid?>;
           }
         </style>
+        <?php endif; ?>
         <a name="<?php echo $post->post_name; ?>"></a>
-        <div class="referencia-item">
+        <div class="referencia-item pg<?=$post->ID?>">
           <div class="informations">
             <div class="page-width">
               <div class="flxtbl base-wire">
