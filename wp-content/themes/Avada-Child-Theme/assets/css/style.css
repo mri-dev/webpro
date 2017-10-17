@@ -742,86 +742,132 @@ body, html {
 .webpro-referenciak-holder .ref-list .galery {
   padding: 30px 0;
 }
+/* line 707, sass/style.scss */
+.webpro-referenciak-holder .ref-list .galery a > span > span > span {
+  border: 5px solid #d2d2d2 !important;
+}
+/* line 709, sass/style.scss */
+.webpro-referenciak-holder .ref-list .galery a > span > span > span:hover {
+  box-shadow: 0 5px 20px #000000;
+}
+/* line 716, sass/style.scss */
+.webpro-referenciak-holder .ref-list .arrow-res {
+  background-image: url("../../images/arrow-ref.svg");
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 240px;
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+}
+/* line 725, sass/style.scss */
+.webpro-referenciak-holder .ref-list .arrow-res.to-right {
+  right: -40%;
+  bottom: -50%;
+}
+/* line 729, sass/style.scss */
+.webpro-referenciak-holder .ref-list .arrow-res.to-left {
+  left: -40%;
+  bottom: -50%;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
 
-/* line 710, sass/style.scss */
+/* line 743, sass/style.scss */
 .EgyediMegoldasok-holder .szalag {
   background: #f7c460 !important;
   text-align: left !important;
   color: #5d4e31 !important;
   border-bottom: 2px solid #cea044;
 }
-/* line 716, sass/style.scss */
+/* line 749, sass/style.scss */
 .EgyediMegoldasok-holder .szalag .switcher:hover {
   color: black !important;
   cursor: pointer;
 }
-/* line 721, sass/style.scss */
+/* line 754, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder {
   display: none;
   padding: 20px 0;
 }
-/* line 725, sass/style.scss */
+/* line 758, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl {
-  margin: 20px 0;
+  margin: 40px 0;
 }
-/* line 727, sass/style.scss */
+/* line 760, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl > div {
   flex-basis: 50%;
   text-align: left;
   padding: 0 20px;
 }
-/* line 732, sass/style.scss */
+/* line 765, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl > div h3 {
+  margin: 0 0 25px 0;
   font-size: 2em;
   color: #6b6c6d;
   line-height: 1.3;
 }
-/* line 738, sass/style.scss */
+/* line 772, sass/style.scss */
+.EgyediMegoldasok-holder .content-switch-holder .flxtbl > div ol {
+  padding-left: 15px;
+}
+/* line 776, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl > div ol li {
   color: #444444;
   font-weight: bold;
 }
-/* line 745, sass/style.scss */
+/* line 783, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl.imgonright > div.img {
   order: 2;
 }
+/* line 789, sass/style.scss */
+.EgyediMegoldasok-holder .content-switch-holder .img img {
+  border: 5px solid #cccccc;
+}
+/* line 793, sass/style.scss */
+.EgyediMegoldasok-holder .content-switch-holder .img .imageholder {
+  position: relative;
+}
 
 @keyframes cloudewalkleft {
-  /* line 754, sass/style.scss */
+  /* line 801, sass/style.scss */
   0% {
     margin-right: 0px;
   }
 
-  /* line 755, sass/style.scss */
+  /* line 802, sass/style.scss */
   50% {
     margin-right: 100px;
   }
 
-  /* line 756, sass/style.scss */
+  /* line 803, sass/style.scss */
   100% {
     margin-right: 0px;
   }
 }
 
 @keyframes cloudewalkright {
-  /* line 759, sass/style.scss */
+  /* line 806, sass/style.scss */
   0% {
     margin-left: 0px;
   }
 
-  /* line 760, sass/style.scss */
+  /* line 807, sass/style.scss */
   50% {
     margin-left: 100px;
   }
 
-  /* line 761, sass/style.scss */
+  /* line 808, sass/style.scss */
   100% {
     margin-left: 0px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  /* line 768, sass/style.scss */
+  /* line 815, sass/style.scss */
   .page-width,
   .contact-form-holder .group-holder,
   .design-viewer > .fusion-column-wrapper,
@@ -830,39 +876,39 @@ body, html {
     max-width: 100% !important;
   }
 
-  /* line 772, sass/style.scss */
+  /* line 819, sass/style.scss */
   .fusion-layout-column > .fusion-column-wrapper {
     padding: 0 25px;
   }
 
-  /* line 775, sass/style.scss */
+  /* line 822, sass/style.scss */
   .fusion-layout-column.design-viewer > .fusion-column-wrapper {
     padding: 35px 0;
   }
 
-  /* line 778, sass/style.scss */
+  /* line 825, sass/style.scss */
   .fusion-main-menu > ul > li {
     padding-right: 25px !important;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 784, sass/style.scss */
+  /* line 831, sass/style.scss */
   .homemaindesign-holder .designholder .designbox {
     min-height: 280px;
   }
 
-  /* line 787, sass/style.scss */
+  /* line 834, sass/style.scss */
   .homemaindesign-holder .bottom-bar a {
     font-size: 0.85em;
   }
 
-  /* line 790, sass/style.scss */
+  /* line 837, sass/style.scss */
   .fusion-mobile-menu-icons a:before {
     color: #f37b6d;
     font-size: 28px;
   }
 
-  /* line 794, sass/style.scss */
+  /* line 841, sass/style.scss */
   .fusion-mobile-menu-icons a {
     position: absolute;
     right: 0;
@@ -870,126 +916,126 @@ body, html {
     display: block;
   }
 
-  /* line 800, sass/style.scss */
+  /* line 847, sass/style.scss */
   .egyedi-megoldasok-holder .items .item a {
     font-size: 1.2em;
   }
 
-  /* line 803, sass/style.scss */
+  /* line 850, sass/style.scss */
   .design-viewer .fusion-column-wrapper h2 {
     font-size: 1.4em !important;
     margin: 10px 0 !important;
   }
 
-  /* line 807, sass/style.scss */
+  /* line 854, sass/style.scss */
   .flxtbl.ic3 > div {
     flex-basis: 100%;
   }
 
-  /* line 810, sass/style.scss */
+  /* line 857, sass/style.scss */
   .homemaindesign-holder .designholder {
     display: none;
   }
 
-  /* line 815, sass/style.scss */
+  /* line 862, sass/style.scss */
   .design-viewer > .fusion-column-wrapper {
     padding: 25px !important;
   }
-  /* line 819, sass/style.scss */
+  /* line 866, sass/style.scss */
   .design-viewer .svgdesign-holder img {
     max-width: 70% !important;
   }
-  /* line 825, sass/style.scss */
+  /* line 872, sass/style.scss */
   .design-viewer > .fusion-column-wrapper > .fusion-builder-row > .fusion-layout-column {
     flex-basis: 100% !important;
     text-align: center !important;
   }
-  /* line 832, sass/style.scss */
+  /* line 879, sass/style.scss */
   .design-viewer.img-on-right .fusion-button-wrapper {
     display: block;
     text-align: center;
     float: none;
   }
-  /* line 837, sass/style.scss */
+  /* line 884, sass/style.scss */
   .design-viewer.img-on-right h2, .design-viewer.img-on-right p {
     text-align: center !important;
   }
-  /* line 840, sass/style.scss */
+  /* line 887, sass/style.scss */
   .design-viewer.img-on-right .fusion-layout-column.fusion-column-last {
     order: 0 !important;
   }
-  /* line 843, sass/style.scss */
+  /* line 890, sass/style.scss */
   .design-viewer.img-on-right .fusion-layout-column.fusion-column-first {
     order: 1 !important;
   }
-  /* line 848, sass/style.scss */
+  /* line 895, sass/style.scss */
   .design-viewer.img-on-left .fusion-button-wrapper {
     display: block;
     text-align: center;
     float: none;
   }
-  /* line 853, sass/style.scss */
+  /* line 900, sass/style.scss */
   .design-viewer.img-on-left h2, .design-viewer.img-on-left p {
     text-align: center !important;
   }
-  /* line 856, sass/style.scss */
+  /* line 903, sass/style.scss */
   .design-viewer.img-on-left .fusion-layout-column.fusion-column-last {
     order: 1 !important;
   }
-  /* line 859, sass/style.scss */
+  /* line 906, sass/style.scss */
   .design-viewer.img-on-left .fusion-layout-column.fusion-column-first {
     order: 0 !important;
   }
 
-  /* line 864, sass/style.scss */
+  /* line 911, sass/style.scss */
   .egyedi-megoldasok-holder .items .item {
     flex-basis: 100%;
   }
 
-  /* line 867, sass/style.scss */
+  /* line 914, sass/style.scss */
   .egyedi-megoldasok-holder .items .item .wrapper .title {
     height: auto;
     font-size: 1.5em;
     font-weight: bold;
   }
 
-  /* line 872, sass/style.scss */
+  /* line 919, sass/style.scss */
   .contact-design-top {
     height: 200px;
   }
 
-  /* line 875, sass/style.scss */
+  /* line 922, sass/style.scss */
   .contact-form-holder .des-v {
     display: none;
   }
 
-  /* line 878, sass/style.scss */
+  /* line 925, sass/style.scss */
   .contact-form-holder .group-holder {
     padding: 0 25px !important;
   }
 
-  /* line 881, sass/style.scss */
+  /* line 928, sass/style.scss */
   .contact-form-holder .flxtbl > div {
     flex-basis: 100% !important;
   }
 
-  /* line 884, sass/style.scss */
+  /* line 931, sass/style.scss */
   .munkatars-lista {
     padding: 25px 0 0 0 !important;
   }
 
-  /* line 887, sass/style.scss */
+  /* line 934, sass/style.scss */
   .contact-form-holder .group-holder .heading h3 {
     margin: 20px 0;
   }
 
-  /* line 890, sass/style.scss */
+  /* line 937, sass/style.scss */
   #main {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
 
-  /* line 894, sass/style.scss */
+  /* line 941, sass/style.scss */
   .fusion-layout-column > .fusion-column-wrapper {
     padding: 0px;
   }

@@ -26,7 +26,8 @@ class WebproReferenciaSC
         $output = '<div class="'.self::SCTAG.'-holder style-'.$attr['key'].'">';
 
         $ref = new WP_Query(array(
-          'post_type' => 'webproref'
+          'post_type' => 'webproref',
+          'posts_per_page' => -1
         ));
         $attr['ref'] = $ref;
 

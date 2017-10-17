@@ -11,7 +11,8 @@
     <div class="flxtbl">
       <div class="img">
         <div class="imageholder">
-          <img src="<?=IMG?>/svgdesign-referencia-i1.svg" alt="">
+          <img src="<?=IMG?>/popup_1.jpg" alt="<?php echo $title; ?>">
+          <div class="arrow-res to-right"></div>
         </div>
       </div>
       <div class="cont">
@@ -32,7 +33,8 @@
     <div class="flxtbl imgonright">
       <div class="img">
         <div class="imageholder">
-          <img src="<?=IMG?>/svgdesign-referencia-i1.svg" alt="">
+          <img src="<?=IMG?>/popup_2.jpg" alt="<?php echo $title; ?>">
+          <div class="arrow-res to-left"></div>
         </div>
       </div>
       <div class="cont">
@@ -53,7 +55,7 @@
     <div class="flxtbl">
       <div class="img">
         <div class="imageholder">
-          <img src="<?=IMG?>/svgdesign-referencia-i1.svg" alt="">
+          <img src="<?=IMG?>/popup_3.jpg" alt="<?php echo $title; ?>">
         </div>
       </div>
       <div class="cont">
