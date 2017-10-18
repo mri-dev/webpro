@@ -40,6 +40,15 @@ class EgyediMegoldasokTemplateSC
           case 'automatizalt_webaruhaz':
             $attr['title'] = 'Önműködő, automatizált webáruház - CRM rendszerekre';
           break;
+          case 'mozimusor':
+            $attr['title'] = 'Automatizált moziműsor megjelenítés';
+          break;
+          case 'facebookapp':
+            $attr['title'] = 'Facebook applikáció fejlesztése';
+          break;
+          case 'fina17molkampany':
+            $attr['title'] = 'Kupon rendszer: 17. FINA Világbajnokság Arena - Mol kampány';
+          break;
         }
 
         $output = '<div class="'.self::SCTAG.'-holder template-'.$attr['key'].'">';

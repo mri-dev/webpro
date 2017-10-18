@@ -27,7 +27,9 @@ class WebproReferenciaSC
 
         $ref = new WP_Query(array(
           'post_type' => 'webproref',
-          'posts_per_page' => -1
+          'posts_per_page' => -1,
+          'orderby' => 'menu_order',
+          'order' => 'DESC'
         ));
         $attr['ref'] = $ref;
 

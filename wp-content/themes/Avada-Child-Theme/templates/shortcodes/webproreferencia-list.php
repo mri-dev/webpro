@@ -16,6 +16,8 @@
 
           if (!empty($customshortcodes)) {
             $xcustomshortcodes = explode(",",$customshortcodes);
+          } else {
+            $xcustomshortcodes = array();
           }
 
           $keywords = array();

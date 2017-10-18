@@ -824,7 +824,7 @@ body, html {
   order: 2;
 }
 /* line 789, sass/style.scss */
-.EgyediMegoldasok-holder .content-switch-holder .img img {
+.EgyediMegoldasok-holder .content-switch-holder .img > .imageholder > img {
   border: 5px solid #cccccc;
 }
 /* line 793, sass/style.scss */
