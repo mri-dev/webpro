@@ -8,7 +8,7 @@
   </div>
   <div class="message-from">
     - <strong><?php echo $name; ?></strong>
-    | E-mail: <a href="mailto:<?php echo $name; ?>"><?php echo $name; ?></a>
+    | E-mail: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
     <?php if ($phone != ''): ?>
     | Telefon: <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
     <?php endif; ?>
