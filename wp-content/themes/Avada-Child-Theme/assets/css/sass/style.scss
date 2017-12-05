@@ -796,6 +796,43 @@ body,html {
   }
 }
 
+.google-mobilfriendly-check-holder{
+  .checker-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px -5px #04273a;
+
+    button {
+      flex-basis: 180px;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0;
+      border: none;
+      font-size: 1.1em;
+      background: $color-laz;
+      color: white;
+    }
+
+    input{
+      flex-basis: calc(100% - 180px);
+      margin: 0;
+      border: none;
+      font-size: 1.4em;
+      color: $color-laz;
+      border-radius: 5px 0 0 5px;
+    }
+
+    input, button {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 20px;
+    }
+  }
+}
 
 @keyframes cloudewalkleft {
   0% { margin-right: 0px;}

@@ -188,8 +188,6 @@ function webprohu_save_posttype_meta( $post_id, $post )
 		}
 		if(!$value) delete_post_meta($post->ID, $key); // Delete if blank
 	}
-
-
 }
 
 add_action('save_post', 'webprohu_save_posttype_meta', 1, 2);
@@ -206,6 +204,7 @@ function ajax_requests()
 {
   $ajax = new AjaxRequests();
   $ajax->contact_form();
+  $ajax->googlemobilcheck();
 }
 add_action( 'init', 'ajax_requests' );
 

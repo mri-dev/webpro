@@ -13,6 +13,51 @@ class AjaxRequests
     add_action( 'wp_ajax_nopriv_'.__FUNCTION__, array( $this, 'ContactFormRequest'));
   }
 
+  public function googlemobilcheck()
+  {
+    add_action( 'wp_ajax_'.__FUNCTION__, array( $this, 'GoogleMobilCheckLog'));
+    add_action( 'wp_ajax_nopriv_'.__FUNCTION__, array( $this, 'GoogleMobilCheckLog'));
+  }
+
+  public function GoogleMobilCheckLog()
+  {
+    global $wpdb;
+    extract($_POST);
+    $return = array(
+      'error' => 0,
+      'msg'   => ''
+    );
+
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $browser = $_SERVER['HTTP_USER_AGENT'];
+
+    if(empty($weburl)) {
+      $return['error']  = 1;
+      $return['msg']    =  __('Kérjük, hogy adja meeg a weboldal elérhetőségét, amit ellenőrizni szeretne.',  'Avada');
+      $this->returnJSON($return);
+    }
+
+    $wpdb->insert(
+      'google_mobil_checks',
+      array(
+        'referer_url' => $referer,
+        'current_url' => $curl,
+        'ip' => $ip,
+        'browser' => $browser,
+        'web' => $weburl
+      ),
+      array(
+        '%s','%s','%s','%s','%s'
+      )
+    );
+
+    $return['web'] = $weburl;
+    $return['insertid'] = $wpdb->insert_id;
+
+    echo json_encode($return);
+    die();
+  }
+
  public function ContactFormRequest()
   {
     extract($_POST);

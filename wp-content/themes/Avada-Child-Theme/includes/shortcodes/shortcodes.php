@@ -5,4 +5,5 @@
   require_once "EgyediMegoldasokTemplateSC.php";
   require_once "HomeMainDesign.php";
   require_once "WebproReferenciak.php";
+  require_once "GoogleMobilfriendlyCheckSC.php";
 ?>
