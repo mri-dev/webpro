@@ -57,6 +57,9 @@
           <textarea name="uzenet" id="uzenet" class="form-control"></textarea>
         </div>
       </div>
+      <div class="checks">
+        <input class="cb" type="checkbox" name="adatvedelem" id="adatvedelem" value=""> <label for="adatvedelem">Elolvastam és elfogadom az <a href="/adatkezelesi_tajekoztato.pdf" target="_blank">Adatkezelési tájékoztató</a>-ban írtakat.</label>
+      </div>
       <div class="recaptcha">
         <div class="g-recaptcha" data-sitekey="<?=CAPTCHA_SITE_KEY?>"></div>
       </div>

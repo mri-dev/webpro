@@ -24,30 +24,56 @@ body, html {
 }
 
 /* line 25, sass/style.scss */
+input[type=checkbox].cb {
+  display: none;
+}
+
+/* line 28, sass/style.scss */
+input[type=checkbox].cb + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0 0 0 20px;
+}
+/* line 32, sass/style.scss */
+input[type=checkbox].cb + label:before {
+  content: "\f0c8";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 2px;
+  color: #d6d2d1;
+}
+
+/* line 41, sass/style.scss */
+input[type=checkbox].cb:checked + label:before {
+  content: "\f14a";
+  color: #00a1ff;
+}
+
+/* line 47, sass/style.scss */
 .homemaindesign-holder {
   border-bottom: 15px solid #3e4748;
 }
-/* line 28, sass/style.scss */
+/* line 50, sass/style.scss */
 .homemaindesign-holder .designholder .designbox {
   min-height: 400px;
   position: relative;
   overflow: hidden;
 }
-/* line 33, sass/style.scss */
+/* line 55, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .design-base {
   position: absolute;
   text-align: center;
   width: 100%;
 }
-/* line 38, sass/style.scss */
+/* line 60, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .design-base img {
   max-width: 100%;
 }
-/* line 43, sass/style.scss */
+/* line 65, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.tervez {
   background: #009eb8;
 }
-/* line 46, sass/style.scss */
+/* line 68, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.tervez .design-base {
   width: 80%;
   bottom: 0;
@@ -55,22 +81,22 @@ body, html {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 54, sass/style.scss */
+/* line 76, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez {
   background: #d2bba0;
 }
-/* line 56, sass/style.scss */
+/* line 78, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .design-base {
   width: 100%;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 63, sass/style.scss */
+/* line 85, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting {
   background: #00caeb;
 }
-/* line 65, sass/style.scss */
+/* line 87, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .design-base {
   width: 80%;
   top: 50%;
@@ -78,132 +104,132 @@ body, html {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 74, sass/style.scss */
+/* line 96, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 100;
 }
-/* line 79, sass/style.scss */
+/* line 101, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cloud-white {
   background-image: url("../../images/cloude-white.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 84, sass/style.scss */
+/* line 106, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cloud-dark {
   background-image: url("../../images/cloude-colored.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 89, sass/style.scss */
+/* line 111, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cloud-big {
   width: 200px;
   height: 100px;
 }
-/* line 93, sass/style.scss */
+/* line 115, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cloud-sm {
   width: 80px;
   height: 40px;
 }
-/* line 97, sass/style.scss */
+/* line 119, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cld1 {
   z-index: 105;
 }
-/* line 100, sass/style.scss */
+/* line 122, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cld2 {
   z-index: 104;
 }
-/* line 103, sass/style.scss */
+/* line 125, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cld3 {
   z-index: 103;
 }
-/* line 106, sass/style.scss */
+/* line 128, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cld4 {
   z-index: 102;
 }
-/* line 109, sass/style.scss */
+/* line 131, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.cld5 {
   z-index: 101;
 }
-/* line 114, sass/style.scss */
+/* line 136, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.animate.animate-left {
   animation-name: cloudewalkleft;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
-/* line 119, sass/style.scss */
+/* line 141, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.animate.animate-right {
   animation-name: cloudewalkright;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
-/* line 125, sass/style.scss */
+/* line 147, sass/style.scss */
 .homemaindesign-holder .designholder .designbox .cloud-des.animate.animate-slow {
   animation-duration: 25s;
 }
-/* line 132, sass/style.scss */
+/* line 154, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .cloud-des {
   bottom: -28px;
 }
-/* line 134, sass/style.scss */
+/* line 156, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld1 {
   left: 10px;
 }
-/* line 137, sass/style.scss */
+/* line 159, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld2 {
   left: 55px;
   bottom: -10px;
 }
-/* line 141, sass/style.scss */
+/* line 163, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld3 {
   left: auto;
   right: 50px;
   bottom: -10px;
 }
-/* line 146, sass/style.scss */
+/* line 168, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.hosting .cloud-des.cld4 {
   left: auto;
   right: 10px;
   bottom: -5px;
 }
-/* line 154, sass/style.scss */
+/* line 176, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des {
   bottom: -28px;
 }
-/* line 156, sass/style.scss */
+/* line 178, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld1 {
   left: -103px;
   bottom: -24px;
 }
-/* line 160, sass/style.scss */
+/* line 182, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld2 {
   left: -47px;
   bottom: -11px;
 }
-/* line 164, sass/style.scss */
+/* line 186, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld3 {
   bottom: -53px;
   left: 104px;
 }
-/* line 168, sass/style.scss */
+/* line 190, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld4 {
   left: auto;
   right: -55px;
   bottom: -8px;
 }
-/* line 173, sass/style.scss */
+/* line 195, sass/style.scss */
 .homemaindesign-holder .designholder .designbox.kivitelez .cloud-des.cld5 {
   left: auto;
   right: -100px;
   bottom: 42px;
 }
-/* line 182, sass/style.scss */
+/* line 204, sass/style.scss */
 .homemaindesign-holder .bottom-bar {
   background: #00889f;
 }
-/* line 185, sass/style.scss */
+/* line 207, sass/style.scss */
 .homemaindesign-holder .bottom-bar a {
   display: block;
   padding: 20px 0;
@@ -212,34 +238,34 @@ body, html {
   text-align: center;
   font-size: 1.15em;
 }
-/* line 195, sass/style.scss */
+/* line 217, sass/style.scss */
 .homemaindesign-holder .bottom-bar .tervez a:hover {
   background: #007285;
 }
-/* line 200, sass/style.scss */
+/* line 222, sass/style.scss */
 .homemaindesign-holder .bottom-bar .kivitelez a {
   background: #c2a27d;
 }
-/* line 202, sass/style.scss */
+/* line 224, sass/style.scss */
 .homemaindesign-holder .bottom-bar .kivitelez a:hover {
   background: #b9966c;
 }
-/* line 208, sass/style.scss */
+/* line 230, sass/style.scss */
 .homemaindesign-holder .bottom-bar .hosting a:hover {
   background: #009eb8;
 }
 
-/* line 218, sass/style.scss */
+/* line 240, sass/style.scss */
 .design-viewer .svgdesign-holder.style-webdesign img {
   max-width: 70% !important;
 }
-/* line 223, sass/style.scss */
+/* line 245, sass/style.scss */
 .design-viewer > .fusion-column-wrapper {
   width: 1100px;
   margin: 0 auto;
   padding: 30px 0;
 }
-/* line 227, sass/style.scss */
+/* line 249, sass/style.scss */
 .design-viewer > .fusion-column-wrapper > .fusion-builder-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,95 +273,95 @@ body, html {
   align-items: center;
   flex-wrap: wrap;
 }
-/* line 233, sass/style.scss */
+/* line 255, sass/style.scss */
 .design-viewer > .fusion-column-wrapper > .fusion-builder-row > .fusion-layout-column {
   width: auto !important;
   margin: 0 !important;
 }
-/* line 241, sass/style.scss */
+/* line 263, sass/style.scss */
 .design-viewer.align-to-bottom > .fusion-column-wrapper {
   padding: 0;
 }
-/* line 246, sass/style.scss */
+/* line 268, sass/style.scss */
 .design-viewer .fusion-column-wrapper {
   font-size: 1.1em !important;
   color: #fefefe;
 }
-/* line 250, sass/style.scss */
+/* line 272, sass/style.scss */
 .design-viewer .fusion-column-wrapper h1, .design-viewer .fusion-column-wrapper h2, .design-viewer .fusion-column-wrapper h3 {
   color: #fefefe;
 }
-/* line 254, sass/style.scss */
+/* line 276, sass/style.scss */
 .design-viewer .fusion-column-wrapper h3 {
   line-height: 1.2 !important;
   font-size: 1.5em !important;
   font-weight: bold !important;
   margin: 15px 0 20px 0 !important;
 }
-/* line 261, sass/style.scss */
+/* line 283, sass/style.scss */
 .design-viewer .fusion-column-wrapper h2 {
   line-height: 1.2 !important;
   font-size: 1.9em !important;
   margin: 15px 0 !important;
 }
-/* line 269, sass/style.scss */
+/* line 291, sass/style.scss */
 .design-viewer.img-on-left h2, .design-viewer.img-on-left p {
   text-align: right;
 }
-/* line 272, sass/style.scss */
+/* line 294, sass/style.scss */
 .design-viewer.img-on-left .fusion-button-wrapper {
   float: right;
 }
-/* line 275, sass/style.scss */
+/* line 297, sass/style.scss */
 .design-viewer.img-on-left .fusion-column-first {
   flex-basis: 35% !important;
 }
-/* line 278, sass/style.scss */
+/* line 300, sass/style.scss */
 .design-viewer.img-on-left .fusion-column-last {
   flex-basis: 65% !important;
 }
-/* line 283, sass/style.scss */
+/* line 305, sass/style.scss */
 .design-viewer.img-on-right .fusion-column-first {
   flex-basis: 65% !important;
 }
-/* line 286, sass/style.scss */
+/* line 308, sass/style.scss */
 .design-viewer.img-on-right .fusion-column-last {
   flex-basis: 35% !important;
 }
 
-/* line 292, sass/style.scss */
+/* line 314, sass/style.scss */
 .contact-form-holder {
   position: relative;
 }
-/* line 295, sass/style.scss */
+/* line 317, sass/style.scss */
 .contact-form-holder .des-v {
   position: absolute;
   pointer-events: none;
   z-index: 100;
 }
-/* line 300, sass/style.scss */
+/* line 322, sass/style.scss */
 .contact-form-holder .des-v img {
   width: 100%;
 }
-/* line 304, sass/style.scss */
+/* line 326, sass/style.scss */
 .contact-form-holder .des-v.coffee {
   width: 250px;
   left: -100px;
   top: -320px;
 }
-/* line 309, sass/style.scss */
+/* line 331, sass/style.scss */
 .contact-form-holder .des-v.levcer {
   width: 400px;
   left: -70px;
   bottom: -100px;
 }
-/* line 314, sass/style.scss */
+/* line 336, sass/style.scss */
 .contact-form-holder .des-v.klavi {
   width: 550px;
   right: -70px;
   bottom: 50px;
 }
-/* line 321, sass/style.scss */
+/* line 343, sass/style.scss */
 .contact-form-holder .group-holder {
   position: relative;
   z-index: 200;
@@ -344,24 +370,24 @@ body, html {
   margin: 0 auto;
   padding: 0 10%;
 }
-/* line 329, sass/style.scss */
+/* line 351, sass/style.scss */
 .contact-form-holder .group-holder .heading {
   text-align: center;
 }
-/* line 331, sass/style.scss */
+/* line 353, sass/style.scss */
 .contact-form-holder .group-holder .heading h3 {
   font-weight: bold;
   margin: 45px 0;
   color: #656565;
 }
-/* line 339, sass/style.scss */
+/* line 361, sass/style.scss */
 .contact-form-holder label {
   font-weight: bold;
   color: black;
   padding: 0 0 10px 0;
   display: block;
 }
-/* line 346, sass/style.scss */
+/* line 368, sass/style.scss */
 .contact-form-holder input, .contact-form-holder textarea, .contact-form-holder select {
   border: none;
   color: #00b4d2;
@@ -373,49 +399,49 @@ body, html {
   border: 2px solid #ececec;
   border-radius: 4px;
 }
-/* line 357, sass/style.scss */
+/* line 379, sass/style.scss */
 .contact-form-holder select, .contact-form-holder textarea {
   width: 100%;
 }
-/* line 360, sass/style.scss */
+/* line 382, sass/style.scss */
 .contact-form-holder textarea {
   width: 100%;
   max-height: 100%;
   min-height: 400px;
 }
-/* line 365, sass/style.scss */
+/* line 387, sass/style.scss */
 .contact-form-holder .missing {
   border: 2px solid #f7a197;
 }
-/* line 369, sass/style.scss */
+/* line 391, sass/style.scss */
 .contact-form-holder .flxtbl > div {
   padding: 10px;
 }
-/* line 374, sass/style.scss */
+/* line 396, sass/style.scss */
 .contact-form-holder .flxtbl > .name, .contact-form-holder .flxtbl > .email, .contact-form-holder .flxtbl > .phone {
   flex-basis: calc(100%/3);
 }
-/* line 377, sass/style.scss */
+/* line 399, sass/style.scss */
 .contact-form-holder .flxtbl > .temakor {
   flex-basis: calc(100%/3);
 }
-/* line 380, sass/style.scss */
+/* line 402, sass/style.scss */
 .contact-form-holder .flxtbl > .tema {
   flex-basis: 66.666666%;
 }
-/* line 383, sass/style.scss */
+/* line 405, sass/style.scss */
 .contact-form-holder .flxtbl > .uzenet {
   flex-basis: 100%;
 }
-/* line 386, sass/style.scss */
+/* line 408, sass/style.scss */
 .contact-form-holder .flxtbl > .recaptcha {
   flex-basis: 100%;
 }
-/* line 389, sass/style.scss */
+/* line 411, sass/style.scss */
 .contact-form-holder .flxtbl > .btns {
   flex-basis: 100%;
 }
-/* line 393, sass/style.scss */
+/* line 415, sass/style.scss */
 .contact-form-holder .flxtbl button {
   background: #00b4d2;
   color: white;
@@ -426,27 +452,27 @@ body, html {
   border-radius: 5px;
   cursor: pointer;
 }
-/* line 402, sass/style.scss */
+/* line 424, sass/style.scss */
 .contact-form-holder .flxtbl button:hover {
   background: #009eb8;
 }
-/* line 406, sass/style.scss */
+/* line 428, sass/style.scss */
 .contact-form-holder .flxtbl button.in-progress {
   background: #f37769;
 }
-/* line 409, sass/style.scss */
+/* line 431, sass/style.scss */
 .contact-form-holder .flxtbl button.sended {
   background: #51b683;
 }
 
-/* line 416, sass/style.scss */
+/* line 438, sass/style.scss */
 .alert-danger {
   color: #ffffff;
   background-color: #ef6454;
   border-color: #d75647;
 }
 
-/* line 422, sass/style.scss */
+/* line 444, sass/style.scss */
 .contact-design-top {
   height: 430px;
   background-image: url("../../images/contact-temp-top.svg");
@@ -455,18 +481,18 @@ body, html {
   background-size: cover !important;
 }
 
-/* line 430, sass/style.scss */
+/* line 452, sass/style.scss */
 .egyedi-megoldasok-holder {
   background: #f9b540;
   color: white;
 }
-/* line 434, sass/style.scss */
+/* line 456, sass/style.scss */
 .egyedi-megoldasok-holder .heading {
   background: #f7a20f;
   padding: 25px 0;
   text-align: center;
 }
-/* line 438, sass/style.scss */
+/* line 460, sass/style.scss */
 .egyedi-megoldasok-holder .heading h2 {
   margin: 0;
   color: white;
@@ -476,85 +502,85 @@ body, html {
   line-height: 1 !important;
   font-weight: bold !important;
 }
-/* line 449, sass/style.scss */
+/* line 471, sass/style.scss */
 .egyedi-megoldasok-holder .items {
   padding: 25px 0 45px  0;
 }
-/* line 451, sass/style.scss */
+/* line 473, sass/style.scss */
 .egyedi-megoldasok-holder .items .item {
   flex-basis: calc(100%/3);
   text-align: center;
 }
-/* line 455, sass/style.scss */
+/* line 477, sass/style.scss */
 .egyedi-megoldasok-holder .items .item .wrapper {
   padding: 15px 30px;
 }
-/* line 458, sass/style.scss */
+/* line 480, sass/style.scss */
 .egyedi-megoldasok-holder .items .item .wrapper .title {
   margin-bottom: 20px;
   height: 57px;
 }
-/* line 463, sass/style.scss */
+/* line 485, sass/style.scss */
 .egyedi-megoldasok-holder .items .item .wrapper .image {
   text-align: center;
 }
-/* line 465, sass/style.scss */
+/* line 487, sass/style.scss */
 .egyedi-megoldasok-holder .items .item .wrapper .image img {
   max-width: 75%;
 }
-/* line 471, sass/style.scss */
+/* line 493, sass/style.scss */
 .egyedi-megoldasok-holder .items .item a {
   font-size: 1.6em;
   line-height: 1.3;
   color: #58595b;
 }
-/* line 476, sass/style.scss */
+/* line 498, sass/style.scss */
 .egyedi-megoldasok-holder .items .item a:hover {
   color: black;
 }
 
-/* line 484, sass/style.scss */
+/* line 506, sass/style.scss */
 .price-ico {
   margin: 0 0 10px 0;
 }
 
-/* line 489, sass/style.scss */
+/* line 511, sass/style.scss */
 .svgdesign-holder .imgholder {
   text-align: center;
 }
 
-/* line 494, sass/style.scss */
+/* line 516, sass/style.scss */
 .table-1, .table-2, .tkt-slctr-tbl-wrap-dv {
   border: 3px solid #ececec;
 }
-/* line 497, sass/style.scss */
+/* line 519, sass/style.scss */
 .table-1 i, .table-2 i, .tkt-slctr-tbl-wrap-dv i {
   width: 25px;
   color: #00b4d2;
   font-size: 18px;
   vertical-align: middle;
 }
-/* line 503, sass/style.scss */
+/* line 525, sass/style.scss */
 .table-1 i[class*=check-circle-o], .table-2 i[class*=check-circle-o], .tkt-slctr-tbl-wrap-dv i[class*=check-circle-o] {
   color: #93d075;
   font-size: 22px;
 }
 
-/* line 508, sass/style.scss */
+/* line 530, sass/style.scss */
 .table-1 table th, .tkt-slctr-tbl-wrap-dv table th {
   font-size: 16px;
   color: black;
 }
 
-/* line 514, sass/style.scss */
+/* line 536, sass/style.scss */
 .fusion-main-menu .button-icon-divider-left {
   border-right: none !important;
 }
-/* line 517, sass/style.scss */
+/* line 539, sass/style.scss */
 .fusion-main-menu .fusion-button-text-left {
   padding-left: 10px !important;
 }
-/* line 520, sass/style.scss */
+/* line 542, sass/style.scss */
 .fusion-main-menu .button-default {
   background: transparent !important;
   border: 2px solid #ffd47f !important;
@@ -562,17 +588,17 @@ body, html {
   border-radius: 4px;
 }
 
-/* line 528, sass/style.scss */
+/* line 550, sass/style.scss */
 .szolg-list {
   color: white;
 }
-/* line 532, sass/style.scss */
+/* line 554, sass/style.scss */
 .szolg-list ul li {
   font-size: 1.4em;
   list-style: none;
   margin: 15px 0;
 }
-/* line 536, sass/style.scss */
+/* line 558, sass/style.scss */
 .szolg-list ul li:before {
   font-family: 'FontAwesome';
   vertical-align: middle;
@@ -581,7 +607,7 @@ body, html {
   margin-right: 13px;
 }
 
-/* line 549, sass/style.scss */
+/* line 571, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper {
   background-image: url("../../images/ref-cloud-bg.svg");
   background-position: center top;
@@ -591,91 +617,91 @@ body, html {
   padding: 25px 0;
   border-bottom: 10px solid #dbdbdb;
 }
-/* line 558, sass/style.scss */
+/* line 580, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 564, sass/style.scss */
+/* line 586, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia {
   flex-basis: calc(100%/4);
   padding: 25px;
 }
-/* line 568, sass/style.scss */
+/* line 590, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia .img {
   border: 8px solid #d2d2d2;
 }
-/* line 572, sass/style.scss */
+/* line 594, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia .title {
   text-align: center;
   padding: 5px 0;
 }
-/* line 575, sass/style.scss */
+/* line 597, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia .title a {
   color: black;
   font-size: 1.2em;
 }
-/* line 581, sass/style.scss */
+/* line 603, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia:hover .img {
   border: 8px solid #f37769;
 }
-/* line 585, sass/style.scss */
+/* line 607, sass/style.scss */
 .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia:hover .title a {
   color: #f37769;
 }
-/* line 595, sass/style.scss */
+/* line 617, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations {
   padding: 35px 0;
 }
-/* line 597, sass/style.scss */
+/* line 619, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire {
   align-items: center;
 }
-/* line 599, sass/style.scss */
+/* line 621, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire {
   align-items: flex-start;
 }
-/* line 601, sass/style.scss */
+/* line 623, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .profil {
   flex-basis: 30%;
   border: 8px solid #d2d2d2;
 }
-/* line 605, sass/style.scss */
+/* line 627, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info {
   flex-basis: 70%;
   color: #58595b;
   padding-left: 25px;
 }
-/* line 609, sass/style.scss */
+/* line 631, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info h3 {
   font-size: 2em;
   color: #666666;
   margin: 0 0 10px 0;
 }
-/* line 615, sass/style.scss */
+/* line 637, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc {
   margin-top: 15px;
 }
-/* line 617, sass/style.scss */
+/* line 639, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc .h {
   font-size: 1.3em;
   margin: 0 0 10px 0;
 }
-/* line 622, sass/style.scss */
+/* line 644, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc ul, .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 629, sass/style.scss */
+/* line 651, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .desc ul li:before {
   content: "\f05d";
   font-family: 'FontAwesome';
   margin-right: 4px;
 }
-/* line 638, sass/style.scss */
+/* line 660, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .link a {
   background-color: #888888;
   font-size: 0.9em;
@@ -687,27 +713,27 @@ body, html {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 652, sass/style.scss */
+/* line 674, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .info-block {
   flex-basis: 60%;
 }
-/* line 656, sass/style.scss */
+/* line 678, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .cover-block {
   flex-basis: 40%;
   box-shadow: 0 20px 50px -20px black;
   border-radius: 10px;
   overflow: hidden;
 }
-/* line 662, sass/style.scss */
+/* line 684, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .base-wire .cover-block img {
   max-width: 100%;
   width: 100%;
 }
-/* line 669, sass/style.scss */
+/* line 691, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .keywords {
   padding-top: 25px;
 }
-/* line 671, sass/style.scss */
+/* line 693, sass/style.scss */
 .webpro-referenciak-holder .ref-list .informations .keywords > div {
   float: left;
   font-size: 0.75em;
@@ -718,7 +744,7 @@ body, html {
   margin: 4px;
   padding: 5px;
 }
-/* line 683, sass/style.scss */
+/* line 705, sass/style.scss */
 .webpro-referenciak-holder .ref-list .szalag {
   background: #58595b;
   color: white;
@@ -726,31 +752,31 @@ body, html {
   font-size: 1.8em;
   padding: 20px 0;
 }
-/* line 690, sass/style.scss */
+/* line 712, sass/style.scss */
 .webpro-referenciak-holder .ref-list .szalag.contact-ad {
   background: #323232;
   font-size: 1.2em;
   padding: 15px 0;
 }
-/* line 695, sass/style.scss */
+/* line 717, sass/style.scss */
 .webpro-referenciak-holder .ref-list .szalag.contact-ad a.totop {
   font-size: 0.6em;
   color: #959595;
   margin-left: 25px;
 }
-/* line 703, sass/style.scss */
+/* line 725, sass/style.scss */
 .webpro-referenciak-holder .ref-list .galery {
   padding: 30px 0;
 }
-/* line 707, sass/style.scss */
+/* line 729, sass/style.scss */
 .webpro-referenciak-holder .ref-list .galery a > span > span > span {
   border: 5px solid #d2d2d2 !important;
 }
-/* line 709, sass/style.scss */
+/* line 731, sass/style.scss */
 .webpro-referenciak-holder .ref-list .galery a > span > span > span:hover {
   box-shadow: 0 5px 20px #000000;
 }
-/* line 716, sass/style.scss */
+/* line 738, sass/style.scss */
 .webpro-referenciak-holder .ref-list .arrow-res {
   background-image: url("../../images/arrow-ref.svg");
   background-repeat: no-repeat;
@@ -760,12 +786,12 @@ body, html {
   pointer-events: none;
   z-index: 100;
 }
-/* line 725, sass/style.scss */
+/* line 747, sass/style.scss */
 .webpro-referenciak-holder .ref-list .arrow-res.to-right {
   right: -40%;
   bottom: -50%;
 }
-/* line 729, sass/style.scss */
+/* line 751, sass/style.scss */
 .webpro-referenciak-holder .ref-list .arrow-res.to-left {
   left: -40%;
   bottom: -50%;
@@ -776,63 +802,63 @@ body, html {
   transform: scale(-1, 1);
 }
 
-/* line 743, sass/style.scss */
+/* line 765, sass/style.scss */
 .EgyediMegoldasok-holder .szalag {
   background: #f7c460 !important;
   text-align: left !important;
   color: #5d4e31 !important;
   border-bottom: 2px solid #cea044;
 }
-/* line 749, sass/style.scss */
+/* line 771, sass/style.scss */
 .EgyediMegoldasok-holder .szalag .switcher:hover {
   color: black !important;
   cursor: pointer;
 }
-/* line 754, sass/style.scss */
+/* line 776, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder {
   display: none;
   padding: 20px 0;
 }
-/* line 758, sass/style.scss */
+/* line 780, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl {
   margin: 40px 0;
 }
-/* line 760, sass/style.scss */
+/* line 782, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl > div {
   flex-basis: 50%;
   text-align: left;
   padding: 0 20px;
 }
-/* line 765, sass/style.scss */
+/* line 787, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl > div h3 {
   margin: 0 0 25px 0;
   font-size: 2em;
   color: #6b6c6d;
   line-height: 1.3;
 }
-/* line 772, sass/style.scss */
+/* line 794, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl > div ol {
   padding-left: 15px;
 }
-/* line 776, sass/style.scss */
+/* line 798, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl > div ol li {
   color: #444444;
   font-weight: bold;
 }
-/* line 783, sass/style.scss */
+/* line 805, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .flxtbl.imgonright > div.img {
   order: 2;
 }
-/* line 789, sass/style.scss */
+/* line 811, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .img > .imageholder > img {
   border: 5px solid #cccccc;
 }
-/* line 793, sass/style.scss */
+/* line 815, sass/style.scss */
 .EgyediMegoldasok-holder .content-switch-holder .img .imageholder {
   position: relative;
 }
 
-/* line 800, sass/style.scss */
+/* line 822, sass/style.scss */
 .google-mobilfriendly-check-holder .checker-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -843,7 +869,7 @@ body, html {
   margin: 0 auto;
   box-shadow: 0 4px 15px -5px #04273a;
 }
-/* line 810, sass/style.scss */
+/* line 832, sass/style.scss */
 .google-mobilfriendly-check-holder .checker-wrapper button {
   flex-basis: 180px;
   cursor: pointer;
@@ -853,7 +879,7 @@ body, html {
   background: #f37769;
   color: white;
 }
-/* line 820, sass/style.scss */
+/* line 842, sass/style.scss */
 .google-mobilfriendly-check-holder .checker-wrapper input {
   flex-basis: calc(100% - 180px);
   margin: 0;
@@ -862,7 +888,7 @@ body, html {
   color: #f37769;
   border-radius: 5px 0 0 5px;
 }
-/* line 829, sass/style.scss */
+/* line 851, sass/style.scss */
 .google-mobilfriendly-check-holder .checker-wrapper input, .google-mobilfriendly-check-holder .checker-wrapper button {
   height: 50px;
   line-height: 50px;
@@ -870,41 +896,41 @@ body, html {
 }
 
 @keyframes cloudewalkleft {
-  /* line 838, sass/style.scss */
+  /* line 860, sass/style.scss */
   0% {
     margin-right: 0px;
   }
 
-  /* line 839, sass/style.scss */
+  /* line 861, sass/style.scss */
   50% {
     margin-right: 100px;
   }
 
-  /* line 840, sass/style.scss */
+  /* line 862, sass/style.scss */
   100% {
     margin-right: 0px;
   }
 }
 
 @keyframes cloudewalkright {
-  /* line 843, sass/style.scss */
+  /* line 865, sass/style.scss */
   0% {
     margin-left: 0px;
   }
 
-  /* line 844, sass/style.scss */
+  /* line 866, sass/style.scss */
   50% {
     margin-left: 100px;
   }
 
-  /* line 845, sass/style.scss */
+  /* line 867, sass/style.scss */
   100% {
     margin-left: 0px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  /* line 852, sass/style.scss */
+  /* line 874, sass/style.scss */
   .page-width,
   .contact-form-holder .group-holder,
   .design-viewer > .fusion-column-wrapper,
@@ -913,28 +939,28 @@ body, html {
     max-width: 100% !important;
   }
 
-  /* line 856, sass/style.scss */
+  /* line 878, sass/style.scss */
   .fusion-layout-column > .fusion-column-wrapper {
     padding: 0 25px;
   }
 
-  /* line 859, sass/style.scss */
+  /* line 881, sass/style.scss */
   .fusion-layout-column.design-viewer > .fusion-column-wrapper {
     padding: 35px 0;
   }
 
-  /* line 862, sass/style.scss */
+  /* line 884, sass/style.scss */
   .fusion-main-menu > ul > li {
     padding-right: 25px !important;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 868, sass/style.scss */
+  /* line 890, sass/style.scss */
   .google-mobilfriendly-check-holder .checker-wrapper {
     width: 100%;
   }
 
-  /* line 871, sass/style.scss */
+  /* line 893, sass/style.scss */
   .google-mobilfriendly-check-holder .checker-wrapper input {
     flex-basis: 100%;
     margin: 0 0 15px 0;
@@ -942,35 +968,35 @@ body, html {
     text-align: center;
   }
 
-  /* line 877, sass/style.scss */
+  /* line 899, sass/style.scss */
   .google-mobilfriendly-check-holder .checker-wrapper button {
     flex-basis: 100%;
     margin: 0;
     border-radius: 5px;
   }
 
-  /* line 882, sass/style.scss */
+  /* line 904, sass/style.scss */
   .google-mobilfriendly-check-holder .checker-wrapper {
     box-shadow: none;
   }
 
-  /* line 885, sass/style.scss */
+  /* line 907, sass/style.scss */
   .homemaindesign-holder .designholder .designbox {
     min-height: 280px;
   }
 
-  /* line 888, sass/style.scss */
+  /* line 910, sass/style.scss */
   .homemaindesign-holder .bottom-bar a {
     font-size: 0.85em;
   }
 
-  /* line 891, sass/style.scss */
+  /* line 913, sass/style.scss */
   .fusion-mobile-menu-icons a:before {
     color: #f37b6d;
     font-size: 28px;
   }
 
-  /* line 895, sass/style.scss */
+  /* line 917, sass/style.scss */
   .fusion-mobile-menu-icons a {
     position: absolute;
     right: 0;
@@ -978,142 +1004,142 @@ body, html {
     display: block;
   }
 
-  /* line 901, sass/style.scss */
+  /* line 923, sass/style.scss */
   .egyedi-megoldasok-holder .items .item a {
     font-size: 1.2em;
   }
 
-  /* line 904, sass/style.scss */
+  /* line 926, sass/style.scss */
   .design-viewer .fusion-column-wrapper h2 {
     font-size: 1.4em !important;
     margin: 10px 0 !important;
   }
 
-  /* line 908, sass/style.scss */
+  /* line 930, sass/style.scss */
   .flxtbl.ic3 > div {
     flex-basis: 100%;
   }
 
-  /* line 911, sass/style.scss */
+  /* line 933, sass/style.scss */
   .homemaindesign-holder .designholder {
     display: none;
   }
 
-  /* line 916, sass/style.scss */
+  /* line 938, sass/style.scss */
   .design-viewer > .fusion-column-wrapper {
     padding: 25px !important;
   }
-  /* line 920, sass/style.scss */
+  /* line 942, sass/style.scss */
   .design-viewer .svgdesign-holder img {
     max-width: 70% !important;
   }
-  /* line 926, sass/style.scss */
+  /* line 948, sass/style.scss */
   .design-viewer > .fusion-column-wrapper > .fusion-builder-row > .fusion-layout-column {
     flex-basis: 100% !important;
     text-align: center !important;
   }
-  /* line 933, sass/style.scss */
+  /* line 955, sass/style.scss */
   .design-viewer.img-on-right .fusion-button-wrapper {
     display: block;
     text-align: center;
     float: none;
   }
-  /* line 938, sass/style.scss */
+  /* line 960, sass/style.scss */
   .design-viewer.img-on-right h2, .design-viewer.img-on-right p {
     text-align: center !important;
   }
-  /* line 941, sass/style.scss */
+  /* line 963, sass/style.scss */
   .design-viewer.img-on-right .fusion-layout-column.fusion-column-last {
     order: 0 !important;
   }
-  /* line 944, sass/style.scss */
+  /* line 966, sass/style.scss */
   .design-viewer.img-on-right .fusion-layout-column.fusion-column-first {
     order: 1 !important;
   }
-  /* line 949, sass/style.scss */
+  /* line 971, sass/style.scss */
   .design-viewer.img-on-left .fusion-button-wrapper {
     display: block;
     text-align: center;
     float: none;
   }
-  /* line 954, sass/style.scss */
+  /* line 976, sass/style.scss */
   .design-viewer.img-on-left h2, .design-viewer.img-on-left p {
     text-align: center !important;
   }
-  /* line 957, sass/style.scss */
+  /* line 979, sass/style.scss */
   .design-viewer.img-on-left .fusion-layout-column.fusion-column-last {
     order: 1 !important;
   }
-  /* line 960, sass/style.scss */
+  /* line 982, sass/style.scss */
   .design-viewer.img-on-left .fusion-layout-column.fusion-column-first {
     order: 0 !important;
   }
 
-  /* line 965, sass/style.scss */
+  /* line 987, sass/style.scss */
   .egyedi-megoldasok-holder .items .item {
     flex-basis: 100%;
   }
 
-  /* line 968, sass/style.scss */
+  /* line 990, sass/style.scss */
   .egyedi-megoldasok-holder .items .item .wrapper .title {
     height: auto;
     font-size: 1.5em;
     font-weight: bold;
   }
 
-  /* line 973, sass/style.scss */
+  /* line 995, sass/style.scss */
   .contact-design-top {
     height: 200px;
   }
 
-  /* line 976, sass/style.scss */
+  /* line 998, sass/style.scss */
   .contact-form-holder .des-v {
     display: none;
   }
 
-  /* line 979, sass/style.scss */
+  /* line 1001, sass/style.scss */
   .contact-form-holder .group-holder {
     padding: 0 25px !important;
   }
 
-  /* line 982, sass/style.scss */
+  /* line 1004, sass/style.scss */
   .contact-form-holder .flxtbl > div {
     flex-basis: 100% !important;
   }
 
-  /* line 985, sass/style.scss */
+  /* line 1007, sass/style.scss */
   .munkatars-lista {
     padding: 25px 0 0 0 !important;
   }
 
-  /* line 988, sass/style.scss */
+  /* line 1010, sass/style.scss */
   .contact-form-holder .group-holder .heading h3 {
     margin: 20px 0;
   }
 
-  /* line 991, sass/style.scss */
+  /* line 1013, sass/style.scss */
   #main {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
 
-  /* line 995, sass/style.scss */
+  /* line 1017, sass/style.scss */
   .fusion-layout-column > .fusion-column-wrapper {
     padding: 0px;
   }
 
-  /* line 998, sass/style.scss */
+  /* line 1020, sass/style.scss */
   .webpro-referenciak-holder .ref-selector > .wrapper {
     padding: 10px;
   }
 
-  /* line 1001, sass/style.scss */
+  /* line 1023, sass/style.scss */
   .webpro-referenciak-holder .ref-selector > .wrapper .referenciak .referencia {
     flex-basis: 50%;
     padding: 0px 10px;
   }
 
-  /* line 1007, sass/style.scss */
+  /* line 1029, sass/style.scss */
   .webpro-referenciak-holder .ref-list .informations .base-wire .info-block,
   .webpro-referenciak-holder .ref-list .informations .base-wire .cover-block,
   .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info {
@@ -1121,92 +1147,92 @@ body, html {
     padding: 15px;
   }
 
-  /* line 1011, sass/style.scss */
+  /* line 1033, sass/style.scss */
   .webpro-referenciak-holder .ref-list .informations {
     padding: 15px 0;
   }
 
-  /* line 1014, sass/style.scss */
+  /* line 1036, sass/style.scss */
   .webpro-referenciak-holder .ref-list .szalag {
     font-size: 1.3em !important;
   }
 
-  /* line 1018, sass/style.scss */
+  /* line 1040, sass/style.scss */
   .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info h3 {
     text-align: center;
   }
-  /* line 1021, sass/style.scss */
+  /* line 1043, sass/style.scss */
   .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .info .link {
     text-align: center;
   }
 
-  /* line 1025, sass/style.scss */
+  /* line 1047, sass/style.scss */
   .webpro-referenciak-holder .ref-list .informations .base-wire .cover-block {
     flex-basis: 80%;
     margin: 0 auto;
     padding: 0;
   }
 
-  /* line 1030, sass/style.scss */
+  /* line 1052, sass/style.scss */
   .webpro-referenciak-holder .ref-list .informations .keywords {
     padding: 25px;
   }
 
-  /* line 1033, sass/style.scss */
+  /* line 1055, sass/style.scss */
   .webpro-referenciak-holder .ref-list .galery {
     padding: 25px;
   }
 
-  /* line 1037, sass/style.scss */
+  /* line 1059, sass/style.scss */
   .webpro-referenciak-holder .ref-list .informations .base-wire .info-wire .profil {
     flex-basis: 50%;
     margin: 0 auto;
   }
 
-  /* line 1041, sass/style.scss */
+  /* line 1063, sass/style.scss */
   .webpro-referenciak-holder .ref-list .szalag.contact-ad {
     padding: 15px;
     font-size: 1.1em !important;
   }
 
-  /* line 1045, sass/style.scss */
+  /* line 1067, sass/style.scss */
   .webpro-referenciak-holder .ref-list .szalag.contact-ad a.totop {
     display: block;
     margin: 0;
     margin-top: 5px;
   }
 
-  /* line 1050, sass/style.scss */
+  /* line 1072, sass/style.scss */
   .webpro-referenciak-holder .ref-list .szalag {
     padding: 15px 25px;
   }
 
-  /* line 1053, sass/style.scss */
+  /* line 1075, sass/style.scss */
   .EgyediMegoldasok-holder .content-switch-holder .flxtbl {
     margin: 20px 0;
   }
 
-  /* line 1056, sass/style.scss */
+  /* line 1078, sass/style.scss */
   .EgyediMegoldasok-holder .content-switch-holder .flxtbl > div {
     flex-basis: 100%;
   }
 
-  /* line 1059, sass/style.scss */
+  /* line 1081, sass/style.scss */
   .webpro-referenciak-holder .ref-list .arrow-res {
     display: none;
   }
 
-  /* line 1062, sass/style.scss */
+  /* line 1084, sass/style.scss */
   .EgyediMegoldasok-holder .content-switch-holder {
     padding: 0;
   }
 
-  /* line 1065, sass/style.scss */
+  /* line 1087, sass/style.scss */
   .EgyediMegoldasok-holder .content-switch-holder .flxtbl > div h3 {
     margin-top: 20px;
   }
 
-  /* line 1068, sass/style.scss */
+  /* line 1090, sass/style.scss */
   .EgyediMegoldasok-holder .content-switch-holder .flxtbl.imgonright > div.cont {
     order: 3;
   }

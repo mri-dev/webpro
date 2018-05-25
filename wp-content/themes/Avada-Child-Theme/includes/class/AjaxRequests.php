@@ -78,6 +78,7 @@ class AjaxRequests
     $temakor = $_POST['temakor'];
     $targy = $_POST['targy'];
     $uzenet = $_POST['uzenet'];
+    $adatk = ($_POST['adatvedelem'] == 'on') ? true : false;
 
     if(empty($name)) $return['missing_elements'][] = 'name';
     if(empty($email)) $return['missing_elements'][] = 'email';
@@ -96,6 +97,15 @@ class AjaxRequests
       $return['error']  = 1;
       $return['msg']    =  __('A következő mezők hibásan vannak kitöltve',  'Avada').":\n". $err_elements_text;
       $return['missing']= count($return['missing_elements']);
+      $this->returnJSON($return);
+    }
+
+
+    if( !$adatk ){
+      $return['missing_elements'][] = 'adatvedelem';
+      $return['error']  = 1;
+      $return['msg']    =  __('Az adatkezelési tájékoztató elfogadása kötelező!',  'Avada');
+      $return['missing']= 1;
       $this->returnJSON($return);
     }
 

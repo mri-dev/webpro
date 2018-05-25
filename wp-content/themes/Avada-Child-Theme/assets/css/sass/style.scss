@@ -22,6 +22,28 @@ body,html {
   }
 }
 
+input[type=checkbox].cb{
+  display: none;
+}
+input[type=checkbox].cb + label {
+position: relative;
+cursor: pointer;
+padding: 0 0 0 20px;
+  &:before{
+    content: "\f0c8";
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: 2px;
+    color: #d6d2d1;
+  }
+}
+input[type=checkbox].cb:checked + label {
+  &:before{
+    content: "\f14a";
+    color: #00a1ff;
+  }
+}
+
 .homemaindesign-holder{
   border-bottom: 15px solid #3e4748;
   .designholder{
