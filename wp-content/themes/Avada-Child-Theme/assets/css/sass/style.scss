@@ -865,6 +865,23 @@ body,html {
 }
 
 @media screen and (max-width: 768px) {
+  .google-mobilfriendly-check-holder .checker-wrapper{
+    width: 100%;
+  }
+  .google-mobilfriendly-check-holder .checker-wrapper input{
+    flex-basis: 100%;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .google-mobilfriendly-check-holder .checker-wrapper button{
+    flex-basis: 100%;
+    margin: 0;
+    border-radius: 5px;
+  }
+  .google-mobilfriendly-check-holder .checker-wrapper{
+    box-shadow: none;
+  }
   .homemaindesign-holder .designholder .designbox{
     min-height: 280px;
   }
